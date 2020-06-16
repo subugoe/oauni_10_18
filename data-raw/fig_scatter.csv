@@ -1,0 +1,501 @@
+sector,INST_NAME,n_total,oa_share,n_total_sec
+Fraunhofer Society,Fraunhofer Institut für Bauphysik,165,0.1393939393939394,14444
+Fraunhofer Society,Fraunhofer Institut für Chemische Technologie,440,0.1590909090909091,14444
+Fraunhofer Society,Fraunhofer MEVIS,351,0.39316239316239315,14444
+Fraunhofer Society,Fraunhofer-Center für Silizium-Photovoltaik CSP,96,0.23958333333333334,14444
+Fraunhofer Society,Fraunhofer-Center Nanoelektronische Technologien,88,0.045454545454545456,14444
+Fraunhofer Society,Fraunhofer-Einrichtung für Angewandte und Integrierte Sicherheit,12,0.4166666666666667,14444
+Fraunhofer Society,Fraunhofer-Einrichtung für Marine Biotechnologie,50,0.68,14444
+Fraunhofer Society,Fraunhofer-Einrichtung für Modulare Festkörper-Technologien EMFT,28,0.32142857142857145,14444
+Fraunhofer Society,"Fraunhofer-Einrichtung für Organik, Materialien und Elektronische Bauelemente COMEDD",19,0.05263157894736842,14444
+Fraunhofer Society,Fraunhofer-Einrichtung für Systeme der Kommunikationstechnik,8,0.75,14444
+Fraunhofer Society,Fraunhofer-Institut für Algorithmen und Wissenschaftliches Rechnen SCAI,174,0.4885057471264368,14444
+Fraunhofer Society,Fraunhofer-Institut für Angewandte Festkörperphysik,461,0.1279826464208243,14444
+Fraunhofer Society,Fraunhofer-Institut für Angewandte Informationstechnik,64,0.296875,14444
+Fraunhofer Society,Fraunhofer-Institut für Angewandte Optik und Feinmechanik,614,0.24104234527687296,14444
+Fraunhofer Society,Fraunhofer-Institut für Angewandte Polymerforschung (IAP),419,0.1766109785202864,14444
+Fraunhofer Society,Fraunhofer-Institut für Arbeitswirtschaft und Organisation,42,0.35714285714285715,14444
+Fraunhofer Society,Fraunhofer-Institut für Betriebsfestigkeit und Systemzuverlässigkeit,342,0.07894736842105263,14444
+Fraunhofer Society,Fraunhofer-Institut für Biomedizinische Technik St. Ingbert und Sulzbach,320,0.328125,14444
+Fraunhofer Society,Fraunhofer-Institut für Digitale Medientechnologie,66,0.2878787878787879,14444
+Fraunhofer Society,Fraunhofer-Institut für Elektronenstrahl- und Plasmatechnik,81,0.14814814814814814,14444
+Fraunhofer Society,Fraunhofer-Institut für Experimentelles Software Engineering,66,0.21212121212121213,14444
+Fraunhofer Society,Fraunhofer-Institut für Fabrikbetrieb und -automatisierung,48,0.1875,14444
+Fraunhofer Society,Fraunhofer-Institut für Fertigungstechnik und Angewandte Materialforschung,457,0.15317286652078774,14444
+Fraunhofer Society,Fraunhofer-Institut für Graphische Datenverarbeitung,130,0.25384615384615383,14444
+Fraunhofer Society,Fraunhofer-Institut für Grenzflächen- und Bioverfahrenstechnik,347,0.3688760806916426,14444
+Fraunhofer Society,Fraunhofer-Institut für Hochfrequenzphysik und Radartechnik FHR,100,0.17,14444
+Fraunhofer Society,Fraunhofer-Institut für Holzforschung,164,0.17073170731707318,14444
+Fraunhofer Society,Fraunhofer-Institut für Integrierte Schaltungen (IIS),314,0.29936305732484075,14444
+Fraunhofer Society,Fraunhofer-Institut für Integrierte Systeme und Bauelementetechnologie,258,0.16279069767441862,14444
+Fraunhofer Society,Fraunhofer-Institut für Intelligente Analyse- und Informationssysteme,115,0.5391304347826087,14444
+Fraunhofer Society,Fraunhofer-Institut für Keramische Technologien und Systeme,538,0.13568773234200743,14444
+Fraunhofer Society,"Fraunhofer-Institut für Kommunikation, Informationsverarbeitung und Ergonomie",96,0.23958333333333334,14444
+Fraunhofer Society,"Fraunhofer-Institut für Kurzzeitdynamik, Ernst-Mach-Institut (EMI)",160,0.18125,14444
+Fraunhofer Society,Fraunhofer-Institut für Lasertechnik (ILT),273,0.2857142857142857,14444
+Fraunhofer Society,Fraunhofer-Institut für Materialfluss und Logistik,9,0.4444444444444444,14444
+Fraunhofer Society,Fraunhofer-Institut für Mikroelektronische Schaltungen und Systeme (IMS),42,0.14285714285714285,14444
+Fraunhofer Society,Fraunhofer-Institut für Molekularbiologie und Angewandte Ökologie,792,0.47474747474747475,14444
+Fraunhofer Society,Fraunhofer-Institut für Nachrichtentechnik Heinrich-Hertz-Institut,509,0.3300589390962672,14444
+Fraunhofer Society,Fraunhofer-Institut für Naturwissenschaftlich-Technische Trendanalysen,51,0.21568627450980393,14444
+Fraunhofer Society,Fraunhofer-Institut für Offene Kommunikationssysteme,98,0.4387755102040816,14444
+Fraunhofer Society,"Fraunhofer-Institut für Optronik, Systemtechnik und Bildauswertung IOSB",157,0.16560509554140126,14444
+Fraunhofer Society,Fraunhofer-Institut für Photonische Mikrosysteme,112,0.14285714285714285,14444
+Fraunhofer Society,Fraunhofer-Institut für Physikalische Messtechnik,233,0.2703862660944206,14444
+Fraunhofer Society,Fraunhofer-Institut für Produktionsanlagen und Konstruktionstechnik,79,0.0759493670886076,14444
+Fraunhofer Society,Fraunhofer-Institut für Produktionstechnik und Automatisierung,111,0.32432432432432434,14444
+Fraunhofer Society,Fraunhofer-Institut für Produktionstechnologie,123,0.17886178861788618,14444
+Fraunhofer Society,Fraunhofer-Institut für Rechnerarchitektur und Softwaretechnik,54,0.4444444444444444,14444
+Fraunhofer Society,Fraunhofer-Institut für Schicht- und Oberflächentechnik (IST),161,0.19875776397515527,14444
+Fraunhofer Society,Fraunhofer-Institut für Sichere Informationstechnologie,16,0.375,14444
+Fraunhofer Society,Fraunhofer-Institut für Silicatforschung (ISC),228,0.2236842105263158,14444
+Fraunhofer Society,Fraunhofer-Institut für Siliziumtechnologie (ISIT),46,0.10869565217391304,14444
+Fraunhofer Society,Fraunhofer-Institut für Software- und Systemtechnik ISST,17,0.35294117647058826,14444
+Fraunhofer Society,Fraunhofer-Institut für Solare Energiesysteme (ISE),1123,0.1611754229741763,14444
+Fraunhofer Society,Fraunhofer-Institut für System- und Innovationsforschung,330,0.3303030303030303,14444
+Fraunhofer Society,Fraunhofer-Institut für Techno- und Wirtschaftsmathematik,427,0.3629976580796253,14444
+Fraunhofer Society,Fraunhofer-Institut für Toxikologie und Experimentelle Medizin,355,0.5154929577464789,14444
+Fraunhofer Society,"Fraunhofer-Institut für Umwelt-, Sicherheits- und Energietechnik",172,0.19186046511627908,14444
+Fraunhofer Society,Fraunhofer-Institut für Verfahrenstechnik und Verpackung,387,0.22997416020671835,14444
+Fraunhofer Society,Fraunhofer-Institut für Verkehrs- und Infrastruktursysteme,11,0.18181818181818182,14444
+Fraunhofer Society,Fraunhofer-Institut für Werkstoff- und Strahltechnik,359,0.22562674094707522,14444
+Fraunhofer Society,Fraunhofer-Institut für Werkstoffmechanik,687,0.2183406113537118,14444
+Fraunhofer Society,Fraunhofer-Institut für Werkzeugmaschinen und Umformtechnik,154,0.15584415584415584,14444
+Fraunhofer Society,Fraunhofer-Institut für Windenergie und Energiesystemtechnik IWES,109,0.3302752293577982,14444
+Fraunhofer Society,Fraunhofer-Institut für Zelltherapie und Immunologie,545,0.6495412844036698,14444
+Fraunhofer Society,Fraunhofer-Institut für Zerstörungsfreie Prüfverfahren,178,0.1797752808988764,14444
+Fraunhofer Society,Fraunhofer-Institut für Zuverlässigkeit und Mikrointegration,153,0.21568627450980393,14444
+Fraunhofer Society,Fraunhofer-Instituts für Elektronische Nanosysteme ENAS,204,0.2549019607843137,14444
+Fraunhofer Society,Fraunhofer-Zentrum für Mittel- und Osteuropa,9,0.2222222222222222,14444
+"Government Research
+ Agencies",Bayerische Landesanstalt für Landwirtschaft,333,0.2672672672672673,25092
+"Government Research
+ Agencies",Bayerische Landesanstalt für Wald und Forstwirtschaft,77,0.33766233766233766,25092
+"Government Research
+ Agencies",Bayerisches Landesamt für Denkmalpflege,20,0.05,25092
+"Government Research
+ Agencies",Bayerisches Landesamt für Gesundheit und Lebensmittelsicherheit,621,0.2834138486312399,25092
+"Government Research
+ Agencies",Bundesagentur für Arbeit,12,0.3333333333333333,25092
+"Government Research
+ Agencies",Bundesamt für Kartographie und Geodäsie (BKG),14,0.21428571428571427,25092
+"Government Research
+ Agencies",Bundesamt für Migration und Flüchtlinge,2,0,25092
+"Government Research
+ Agencies",Bundesamt für Seeschifffahrt und Hydrographie,29,0.5862068965517241,25092
+"Government Research
+ Agencies",Bundesamt für Strahlenschutz,360,0.3472222222222222,25092
+"Government Research
+ Agencies",Bundesamt für Verbraucherschutz und Lebensmittelsicherheit (BVL),168,0.23809523809523808,25092
+"Government Research
+ Agencies",Bundesanstalt für Arbeitsschutz und Arbeitsmedizin,262,0.4580152671755725,25092
+"Government Research
+ Agencies",Bundesanstalt für Geowissenschaften und Rohstoffe (BGR),1040,0.2778846153846154,25092
+"Government Research
+ Agencies",Bundesanstalt für Gewässerkunde,400,0.2675,25092
+"Government Research
+ Agencies",Bundesanstalt für Materialforschung und -prüfung,3218,0.18272218769422002,25092
+"Government Research
+ Agencies",Bundesanstalt für Straßenwesen,36,0.16666666666666666,25092
+"Government Research
+ Agencies",Bundesanstalt für Wasserbau,48,0.041666666666666664,25092
+"Government Research
+ Agencies",Bundesforschungsanstalt für Landwirtschaft,12,0.08333333333333333,25092
+"Government Research
+ Agencies",Bundesgesundheitsamt,1,1,25092
+"Government Research
+ Agencies",Bundesinstitut für Arzneimittel und Medizinprodukte,328,0.4695121951219512,25092
+"Government Research
+ Agencies",Bundesinstitut für Kultur und Geschichte der Deutschen im östlichen Europa,2,0,25092
+"Government Research
+ Agencies",Bundesinstitut für ostwissenschaftliche und internationale Studien (BIOst),1,0,25092
+"Government Research
+ Agencies",Bundesinstitut für Risikobewertung (BfR),1269,0.4310480693459417,25092
+"Government Research
+ Agencies",Bundeszentrale für gesundheitliche Aufklärung,16,0.1875,25092
+"Government Research
+ Agencies",Deutscher Wetterdienst,716,0.638268156424581,25092
+"Government Research
+ Agencies",Deutsches Archäologisches Institut,138,0.3115942028985507,25092
+"Government Research
+ Agencies",Deutsches Geodätisches Forschungsinstitut,52,0.40384615384615385,25092
+"Government Research
+ Agencies",Deutsches Zentrum für Altersfragen,94,0.35106382978723405,25092
+"Government Research
+ Agencies",Europäische Konferenz für Molekularbiologie (EMBO),12,0.6666666666666666,25092
+"Government Research
+ Agencies",Forschungsanstalt Geisenheim,72,0.09722222222222222,25092
+"Government Research
+ Agencies",Forstliche Versuchs- und Forschungsanstalt Baden-Württemberg (FVA),245,0.39183673469387753,25092
+"Government Research
+ Agencies","Friedrich-Loeffler-Institut, Bundesforschungsinstitut für Tiergesundheit",2867,0.4865713289152424,25092
+"Government Research
+ Agencies",Germany Trade & Invest,1,0,25092
+"Government Research
+ Agencies",Hessisches Landeskriminalamt,9,0.1111111111111111,25092
+"Government Research
+ Agencies",Institut für Arbeitsmarkt- und Berufsforschung (IAB) der Bundesagentur für Arbeit (BA),399,0.45112781954887216,25092
+"Government Research
+ Agencies",Institut für Vogelforschung - Vogelwarte Helgoland,215,0.3627906976744186,25092
+"Government Research
+ Agencies","Johann Heinrich von Thünen-Institut, Bundesinstitut für Ländliche Räume, Wald und Fischerei",1691,0.3211117681845062,25092
+"Government Research
+ Agencies","Julius Kühn-Institut, Bundesforschungsinstitut für Kulturpflanzen",1258,0.3449920508744038,25092
+"Government Research
+ Agencies",Konrad-Zuse-Zentrum für Informationstechnik,465,0.4817204301075269,25092
+"Government Research
+ Agencies",Länderinstitut für Bienenkunde Hohen Neuendorf e.V.,89,0.4943820224719101,25092
+"Government Research
+ Agencies","Landesamt für Bergbau, Energie und Geologie",91,0.07692307692307693,25092
+"Government Research
+ Agencies",Landesamt für Denkmalpflege Hessen,13,0.15384615384615385,25092
+"Government Research
+ Agencies",Landesamt für Denkmalpflege Sachsen,6,0.16666666666666666,25092
+"Government Research
+ Agencies","Landesamt für Natur, Umwelt und Verbraucherschutz NRW",26,0.15384615384615385,25092
+"Government Research
+ Agencies",Landesamt für Soziales und Versorgung des Landes Brandenburg,3,0,25092
+"Government Research
+ Agencies","Landesanstalt für Landwirtschaft und Gartenbau (LLG), Sachsen-Anhalt",138,0.34782608695652173,25092
+"Government Research
+ Agencies",Landesforschungsanstalt für Landwirtschaft und Fischerei MV,17,0.058823529411764705,25092
+"Government Research
+ Agencies",Landesgesundheitsamt Baden-Württemberg,24,0.16666666666666666,25092
+"Government Research
+ Agencies",Landesinstitut für Gesundheit und Arbeit des Landes Nordrhein-Westfalen (LIGA.NRW),1,0,25092
+"Government Research
+ Agencies",Landeskriminalamt Nordrhein-Westfalen,3,0,25092
+"Government Research
+ Agencies",Landeslabor Berlin-Brandenburg,2,0.5,25092
+"Government Research
+ Agencies",Landesuntersuchungsanstalt für das Gesundheits- und Veterinärwesen (LUA) Sachsen,23,0.2608695652173913,25092
+"Government Research
+ Agencies","Max Rubner-Institut, Bundesforschungsinstitut für Ernährung und Lebensmittel",822,0.2639902676399027,25092
+"Government Research
+ Agencies",Niedersächsisches Landesamt für Verbraucherschutz und Lebensmittelsicherheit,27,0.3333333333333333,25092
+"Government Research
+ Agencies",Niedersächsisches Landesgesundheitsamt (NLGA),18,0.1111111111111111,25092
+"Government Research
+ Agencies",Nordwestdeutsche Forstliche Versuchsanstalt,92,0.358695652173913,25092
+"Government Research
+ Agencies",Paul-Ehrlich-Institut - Bundesamt für Sera und Impfstoffe,823,0.5188335358444714,25092
+"Government Research
+ Agencies",Physikalisch-Technische Bundesanstalt,2798,0.4260185847033595,25092
+"Government Research
+ Agencies",RLP AgroScience GmbH,62,0.4032258064516129,25092
+"Government Research
+ Agencies",Robert Koch-Institut,2817,0.6510472133475328,25092
+"Government Research
+ Agencies","Sächsisches Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG)",33,0.09090909090909091,25092
+"Government Research
+ Agencies","Sanitätsakademie der Bundeswehr, Ernst-von-Bergmann Kaserne",580,0.36551724137931035,25092
+"Government Research
+ Agencies",Staatliche Naturwissenschaftlichen Sammlungen Bayerns (SNSB),721,0.36615811373092927,25092
+"Government Research
+ Agencies",Staatliches Weinbauinstitut Freiburg,9,0.2222222222222222,25092
+"Government Research
+ Agencies",Thüringer Landesanstalt für Landwirtschaft,56,0.19642857142857142,25092
+"Government Research
+ Agencies",Umweltbundesamt,452,0.35398230088495575,25092
+"Government Research
+ Agencies","Wehrwissenschaftliches Institut für Werk-, Explosiv- und Betriebsstoffe",11,0.2727272727272727,25092
+"Government Research
+ Agencies",Zentrum für Militärgeschichte und Sozialwissenschaften der Bundeswehr,6,0.3333333333333333,25092
+Helmholtz Association,Alfred-Wegener-Institut für Polar- und Meeresforschung,4701,0.6885768985322271,121181
+Helmholtz Association,Deutsches Elektronen-Synchrotron,8269,0.8275486757769984,121181
+Helmholtz Association,Deutsches Krebsforschungszentrum (DKFZ),12267,0.6188962256460422,121181
+Helmholtz Association,Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR),7603,0.5333421018019203,121181
+Helmholtz Association,Deutsches Zentrum für Neurodegenerative Erkrankungen e.V. (DZNE),4053,0.6207747347643721,121181
+Helmholtz Association,ExtreMe Matter Institute EMMI,134,0.6865671641791045,121181
+Helmholtz Association,Forschungszentrum Jülich GmbH (FZJ),14884,0.514377855415211,121181
+Helmholtz Association,GEOMAR Helmholtz-Zentrum für Ozeanforschung Kiel,3694,0.6507850568489443,121181
+Helmholtz Association,GMD-Forschungszentrum Informationstechnik GmbH,2,0,121181
+Helmholtz Association,GSI Helmholtzzentrum für Schwerionenforschung,4292,0.630475302889096,121181
+Helmholtz Association,Helmholtz Zentrum München - Deutsches Forschungszentrum für Gesundheit und Umwelt (GmbH) HMGU,10141,0.6273543043092398,121181
+Helmholtz Association,Helmholtz-Institut Jena,819,0.5311355311355311,121181
+Helmholtz Association,Helmholtz-Zentrum Berlin für Materialien und Energie,5019,0.41960549910340705,121181
+Helmholtz Association,Helmholtz-Zentrum Dresden-Rossendorf (HZDR),4543,0.39599383667180277,121181
+Helmholtz Association,Helmholtz-Zentrum für Infektionsforschung,3492,0.6709621993127147,121181
+Helmholtz Association,Helmholtz-Zentrum für Umweltforschung GmbH - UFZ,5500,0.37036363636363634,121181
+Helmholtz Association,Helmholtz-Zentrum Geesthacht Zentrum für Materialforschung und Küstenforschung,3305,0.4962178517397882,121181
+Helmholtz Association,Helmholtz-Zentrum Potsdam Deutsches GeoForschungsZentrum - GFZ,4843,0.5789799710922982,121181
+Helmholtz Association,Karlsruher Institut für Technologie,24878,0.4024841225178873,121181
+Helmholtz Association,Max-Delbrück-Centrum für Molekulare Medizin (MDC) Berlin-Buch,3420,0.7318713450292398,121181
+Helmholtz Association,Max-Planck-Institut für Plasmaphysik (IPP),3325,0.7443609022556391,121181
+Leibniz Association,Akademie für Raumforschung und Landesplanung - Leibniz-Forum für Raumwissenschaften (ARL),4,0.25,56620
+Leibniz Association,Bernhard-Nocht-Institut für Tropenmedizin (BNI),960,0.6666666666666666,56620
+Leibniz Association,Biodiversität und Klima Forschungszentrum (BiK-F),1189,0.4272497897392767,56620
+Leibniz Association,Bremer Institut für Präventionsforschung und Sozialmedizin (BIPS),753,0.5790172642762285,56620
+Leibniz Association,Deutsche Forschungsanstalt für Lebensmittelchemie,174,0.19540229885057472,56620
+Leibniz Association,Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH (DSMZ),1095,0.7287671232876712,56620
+Leibniz Association,Deutsche Zentralbibliothek für Medizin (ZB MED),1,0,56620
+Leibniz Association,Deutsches Bergbau-Museum (DBM),36,0.2222222222222222,56620
+Leibniz Association,Deutsches Diabetes-Zentrum (DDZ),471,0.49044585987261147,56620
+Leibniz Association,Deutsches Forschungsinstitut für öffentliche Verwaltung Speyer,27,0,56620
+Leibniz Association,Deutsches Institut für Erwachsenenbildung - Leibniz-Zentrum für Lebenslanges Lernen,21,0.23809523809523808,56620
+Leibniz Association,Deutsches Institut für Internationale Pädagogische Forschung,472,0.4025423728813559,56620
+Leibniz Association,Deutsches Institut für Wirtschaftsforschung e.V. (DIW Berlin),992,0.6512096774193549,56620
+Leibniz Association,Deutsches Museum,88,0.32954545454545453,56620
+Leibniz Association,Deutsches Primatenzentrum GmbH (DPZ),1002,0.6716566866267465,56620
+Leibniz Association,Deutsches Rheuma-Forschungszentrum Berlin,931,0.5542427497314716,56620
+Leibniz Association,DIfE - Deutsches Institut für Ernährungsforschung,1537,0.6877033181522446,56620
+Leibniz Association,Ferdinand-Braun-Institut für Höchstfrequenztechnik (FBH),552,0.14130434782608695,56620
+Leibniz Association,FIZ Chemie - Fachinformationszentrum Chemie GmbH,2,0,56620
+Leibniz Association,FIZ Karlsruhe - Leibniz-Institut für Informationsinfrastruktur,14,0.35714285714285715,56620
+Leibniz Association,Forschungsgesellschaft für Angewandte Naturwissenschaften e. V. (FGAN),1,0,56620
+Leibniz Association,Forschungszentrum Borstel - Leibniz-Zentrum für Medizin und Biowissenschaften (FZB),1081,0.6188714153561518,56620
+Leibniz Association,Georg-Eckert-Institut für internationale Schulbuchforschung,38,0.10526315789473684,56620
+Leibniz Association,Germanisches Nationalmuseum (GNM),8,0.125,56620
+Leibniz Association,GESIS - Leibniz-Institut für Sozialwissenschaften,322,0.35714285714285715,56620
+Leibniz Association,Heinrich-Pette-Institut für Experimentelle Virologie und Immunologie an der Universität Hamburg,527,0.7305502846299811,56620
+Leibniz Association,Herder-Institut für historische Ostmitteleuropaforschung,13,0,56620
+Leibniz Association,Hessische Stiftung Friedens- und Konfliktforschung,69,0.2028985507246377,56620
+Leibniz Association,ifo Institut - Leibniz-Institut für Wirtschaftsforschung an der Universität München e.V.,1447,0.6572218382861091,56620
+Leibniz Association,ILS - Institut für Landes- und Stadtentwicklungsforschung,27,0.1111111111111111,56620
+Leibniz Association,INM - Leibniz-Institut für Neue Materialien gGmbH,714,0.3025210084033613,56620
+Leibniz Association,Institut für Deutsche Sprache - IDS,101,0.33663366336633666,56620
+Leibniz Association,Institut für Weltwirtschaft an der Universität Kiel (IfW),608,0.6019736842105263,56620
+Leibniz Association,Institut für Wirtschaftsforschung Halle - IWH,184,0.44021739130434784,56620
+Leibniz Association,Institut für Zeitgeschichte (IfZ),38,0.3157894736842105,56620
+Leibniz Association,IUF - Leibniz-Institut für Umweltmedizinische Forschung  an der Heinrich-Heine-Universität Düsseldorf gGmbH,516,0.5348837209302325,56620
+Leibniz Association,Kiepenheuer-Institut für Sonnenphysik (KIS),349,0.833810888252149,56620
+Leibniz Association,Leibniz-Institut für Agrarentwicklung in Mittel- und Osteuropa,327,0.327217125382263,56620
+Leibniz Association,Leibniz-Institut für Agrartechnik Potsdam-Bornim e.V.,640,0.234375,56620
+Leibniz Association,Leibniz-Institut für Altersforschung - Fritz-Lipmann-Institut e.V. (FLI),751,0.6924101198402131,56620
+Leibniz Association,Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V.,660,0.32575757575757575,56620
+Leibniz Association,Leibniz-Institut für Angewandte Geophysik,430,0.27209302325581397,56620
+Leibniz Association,Leibniz-Institut für Arbeitsforschung an der TU Dortmund (IfADo),771,0.41245136186770426,56620
+Leibniz Association,Leibniz-Institut für Arterioskleroseforschung (LIFA),50,0.64,56620
+Leibniz Association,Leibniz-Institut für Astrophysik Potsdam,1833,0.9432624113475178,56620
+Leibniz Association,Leibniz-Institut für Atmosphärenphysik e.V. an der Universität Rostock (IAP),307,0.5179153094462541,56620
+Leibniz Association,Leibniz-Institut für Bildungsverläufe e.V. (LIfBi),22,0.13636363636363635,56620
+Leibniz Association,Leibniz-Institut für die Pädagogik der Naturwissenschaften und Mathematik (IPN),226,0.22566371681415928,56620
+Leibniz Association,Leibniz-Institut für Europäische Geschichte Mainz (IEG),32,0.15625,56620
+Leibniz Association,Leibniz-Institut für Festkörper- und Werkstoffforschung Dresden,3899,0.40625801487560914,56620
+Leibniz Association,Leibniz-Institut für Gemüse- und Zierpflanzenbau Großbeeren/Erfurt e. V. (IGZ),407,0.3931203931203931,56620
+Leibniz Association,Leibniz-Institut für Gewässerökologie und Binnenfischerei,1845,0.46233062330623304,56620
+Leibniz Association,Leibniz-Institut für Globale und Regionale Studien (GIGA),303,0.45874587458745875,56620
+Leibniz Association,Leibniz-Institut für innovative Mikroelektronik,634,0.27129337539432175,56620
+Leibniz Association,Leibniz-Institut für Katalyse e. V. an der Universität Rostock (LIKAT),1958,0.11542390194075587,56620
+Leibniz Association,Leibniz-Institut für Kristallzüchtung (IKZ),532,0.30639097744360905,56620
+Leibniz Association,Leibniz-Institut für Länderkunde - IfL,33,0.12121212121212122,56620
+Leibniz Association,"Leibniz-Institut für Molekulare Pharmakologie, Berlin (FMP)",904,0.5641592920353983,56620
+Leibniz Association,Leibniz-Institut für Naturstoff-Forschung und Infektionsbiologie e. V. Hans-Knöll-Institut (HKI),1182,0.6133671742808798,56620
+Leibniz Association,Leibniz-Institut für Neurobiologie,872,0.5951834862385321,56620
+Leibniz Association,Leibniz-Institut für Nutztierbiologie,986,0.4766734279918864,56620
+Leibniz Association,Leibniz-Institut für Oberflächenmodifizierung (IOM),528,0.23295454545454544,56620
+Leibniz Association,Leibniz-Institut für ökologische Raumentwicklung e. V.,139,0.20863309352517986,56620
+Leibniz Association,Leibniz-Institut für Ostseeforschung Warnemünde (IOW),949,0.4541622760800843,56620
+Leibniz Association,Leibniz-Institut für Pflanzenbiochemie,689,0.48911465892597966,56620
+Leibniz Association,Leibniz-Institut für Pflanzengenetik und Kulturpflanzenforschung (IPK),1291,0.5453137103020914,56620
+Leibniz Association,Leibniz-Institut für Plasmaforschung und Technologie e.V.,660,0.2287878787878788,56620
+Leibniz Association,Leibniz-Institut für Polymerforschung Dresden e. V. (IPF),2201,0.18673330304407088,56620
+Leibniz Association,Leibniz-Institut für Regionalentwicklung und Strukturplanung (IRS),52,0.09615384615384616,56620
+Leibniz Association,Leibniz-Institut für Troposphärenforschung,850,0.6870588235294117,56620
+Leibniz Association,Leibniz-Institut für Wissensmedien,545,0.3486238532110092,56620
+Leibniz Association,Leibniz-Institut für Zoo- und Wildtierforschung,865,0.5260115606936416,56620
+Leibniz Association,Leibniz-Zentrum für Agrarlandschafts- und Landnutzungsforschung (ZALF) e.V.,1181,0.36833192209991533,56620
+Leibniz Association,Leibniz-Zentrum für Marine Tropenökologie (ZMT) GmbH,751,0.45006657789613846,56620
+Leibniz Association,Leibniz-Zentrum für Psychologische Information und Dokumentation (ZPID),39,0.20512820512820512,56620
+Leibniz Association,Mathematisches Forschungsinstitut Oberwolfach gGmbH,8,0.375,56620
+Leibniz Association,Max-Born-Institut für Nichtlineare Optik und Kurzzeitspektroskopie (MBI),1309,0.4232238349885409,56620
+Leibniz Association,Museum für Naturkunde Leibniz-Institut für Evolutions- und Biodiversitätsforschung (MfN),1403,0.413399857448325,56620
+Leibniz Association,Paul-Drude-Institut für Festkörperelektronik (PDI),737,0.49389416553595655,56620
+Leibniz Association,Potsdam-Institut für Klimafolgenforschung (PIK),2137,0.5970987365465606,56620
+Leibniz Association,Rheinisch-Westfälisches Institut für Wirtschaftsforschung e.V.,207,0.5072463768115942,56620
+Leibniz Association,Römisch-Germanisches Zentralmuseum (RGZM),66,0.21212121212121213,56620
+Leibniz Association,Schloss Dagstuhl - Leibniz-Zentrum für Informatik GmbH (LZI),1,1,56620
+Leibniz Association,Senckenberg am Meer Wilhelmshaven,518,0.3745173745173745,56620
+Leibniz Association,Senckenberg Deutsches Entomologisches Institut Müncheberg,79,0.34177215189873417,56620
+Leibniz Association,Senckenberg Forschungsinstitut und Naturmuseum Frankfurt,1772,0.33803611738148986,56620
+Leibniz Association,Senckenberg Museum für Naturkunde Görlitz,242,0.3512396694214876,56620
+Leibniz Association,Senckenberg Naturhistorische Sammlungen Dresden,498,0.23493975903614459,56620
+Leibniz Association,Technische Informationsbibliothek (TIB),16,0.5625,56620
+Leibniz Association,Weierstraß-Institut für Angewandte Analysis und Stochastik Leibniz-Institut im Forschungsverbund Berlin e. V. (WIAS),1114,0.59784560143626575,56620
+Leibniz Association,Wissenschaftszentrum Berlin für Sozialforschung (WZB),552,0.4438405797101449,56620
+Leibniz Association,ZBW - Deutsche Zentralbibliothek für Wirtschaftswissenschaften Leibniz-Informationszentrum Wirtschaft,13,0.5384615384615384,56620
+Leibniz Association,Zentrum für Europäische Wirtschaftsforschung GmbH (ZEW),568,0.6126760563380281,56620
+Leibniz Association,Zentrum für Zeithistorische Forschung Potsdam,51,0.09803921568627451,56620
+Leibniz Association,Zoologisches Forschungsmuseum Alexander Koenig (ZFMK),876,0.4006849315068493,56620
+Max Planck Society,Chemical Genomics Centre of the Max Planck Society,177,0.4350282485875706,93002
+Max Planck Society,Ernst Strüngmann Institut (ESI),200,0.86,93002
+Max Planck Society,Forschungszentrum caesar,303,0.6600660066006601,93002
+Max Planck Society,Friedrich-Miescher-Laboratorium für biologische Arbeitsgruppen in der Max-Planck-Gesellschaft,101,0.8415841584158416,93002
+Max Planck Society,Fritz-Haber-Institut der Max-Planck-Gesellschaft,2201,0.6624261699227624,93002
+Max Planck Society,Max Planck Forschungsstelle für Enzymologie der Proteinfaltung,108,0.3425925925925926,93002
+Max Planck Society,Max Planck UCL Centre for Computational Psychiatry and Ageing Research,33,0.8787878787878788,93002
+Max Planck Society,Max-Planck-Institut für Astronomie,3725,0.9779865771812081,93002
+Max Planck Society,Max-Planck-Institut für Astrophysik,2581,0.9752034095311894,93002
+Max Planck Society,Max-Planck-Institut für ausländisches öffentliches Recht und Völkerrecht,48,0.3541666666666667,93002
+Max Planck Society,Max-Planck-Institut für ausländisches und internationales Privatrecht,23,0.17391304347826086,93002
+Max Planck Society,Max-Planck-Institut für ausländisches und internationales Strafrecht,51,0.0784313725490196,93002
+Max Planck Society,Max-Planck-Institut für Bildungsforschung,1295,0.6277992277992278,93002
+Max Planck Society,Max-Planck-Institut für Biochemie,1880,0.7095744680851064,93002
+Max Planck Society,Max-Planck-Institut für Biogeochemie,1330,0.643609022556391,93002
+Max Planck Society,Max-Planck-Institut für Biologie,4,0.5,93002
+Max Planck Society,Max-Planck-Institut für Biologie des Alterns,448,0.859375,93002
+Max Planck Society,Max-Planck-Institut für biologische Kybernetik,991,0.5842583249243188,93002
+Max Planck Society,Max-Planck-Institut für Biophysik,603,0.6567164179104478,93002
+Max Planck Society,Max-Planck-Institut für biophysikalische Chemie (Karl-Friedrich-Bonhoeffer-Institut),2529,0.7864768683274022,93002
+Max Planck Society,Max-Planck-Institut für Chemie (Otto-Hahn-Institut),1799,0.6364647026125625,93002
+Max Planck Society,Max-Planck-Institut für Chemische Energiekonversion,1190,0.33949579831932775,93002
+Max Planck Society,Max-Planck-Institut für chemische Ökologie,1418,0.5944992947813822,93002
+Max Planck Society,Max-Planck-Institut für Chemische Physik fester Stoffe,1961,0.5385007649158593,93002
+Max Planck Society,Max-Planck-Institut für demografische Forschung,554,0.6642599277978339,93002
+Max Planck Society,Max-Planck-Institut für die Physik des Lichts,1121,0.655664585191793,93002
+Max Planck Society,Max-Planck-Institut für Dynamik komplexer technischer Systeme,983,0.4404883011190234,93002
+Max Planck Society,Max-Planck-Institut für Dynamik und Selbstorganisation,1179,0.7523324851569126,93002
+Max Planck Society,Max-Planck-Institut für Eisenforschung GmbH,1689,0.3043220840734162,93002
+Max Planck Society,Max-Planck-Institut für empirische Ästhetik,137,0.6058394160583942,93002
+Max Planck Society,Max-Planck-Institut für Entwicklungsbiologie,1083,0.7497691597414589,93002
+Max Planck Society,Max-Planck-Institut für ethnologische Forschung,147,0.23129251700680273,93002
+Max Planck Society,Max-Planck-Institut für europäische Rechtsgeschichte,21,0.38095238095238093,93002
+Max Planck Society,Max-Planck-Institut für evolutionäre Anthropologie,2250,0.5848888888888889,93002
+Max Planck Society,Max-Planck-Institut für Evolutionsbiologie,676,0.7337278106508875,93002
+Max Planck Society,Max-Planck-Institut für experimentelle Endokrinologie,7,0.5714285714285714,93002
+Max Planck Society,Max-Planck-Institut für experimentelle Medizin,812,0.6711822660098522,93002
+Max Planck Society,Max-Planck-Institut für extraterrestrische Physik (MPE),4250,0.9174117647058824,93002
+Max Planck Society,Max-Planck-Institut für Festkörperforschung (MPI-FKF),3196,0.5134543178973717,93002
+Max Planck Society,Max-Planck-Institut für Gesellschaftsforschung,138,0.5797101449275363,93002
+Max Planck Society,Max-Planck-Institut für Gravitationsphysik (Albert-Einstein-Institut),1941,0.9587841318907779,93002
+Max Planck Society,Max-Planck-Institut für Herz- und Lungenforschung (W. G. Kerckhoff-Institut),899,0.7230255839822024,93002
+Max Planck Society,Max-Planck-Institut für Hirnforschung,609,0.6486042692939245,93002
+Max Planck Society,Max-Planck-Institut für Immunbiologie und Epigenetik,611,0.7888707037643208,93002
+Max Planck Society,Max-Planck-Institut für Infektionsbiologie,714,0.7352941176470589,93002
+Max Planck Society,Max-Planck-Institut für Informatik,1000,0.644,93002
+Max Planck Society,Max-Planck-Institut für Innovation und Wettbewerb,79,0.4050632911392405,93002
+Max Planck Society,Max-Planck-Institut für Intelligente Systeme,2095,0.5031026252983294,93002
+Max Planck Society,Max-Planck-Institut für Kernphysik (MPIK),2988,0.8350066934404283,93002
+Max Planck Society,Max-Planck-Institut für Kognitions- und Neurowissenschaften,2002,0.583916083916084,93002
+Max Planck Society,Max-Planck-Institut für Kohlenforschung,1422,0.3361462728551336,93002
+Max Planck Society,Max-Planck-Institut für Kolloid- und Grenzflächenforschung,2725,0.3838532110091743,93002
+Max Planck Society,Max-Planck-Institut für Marine Mikrobiologie,973,0.6485097636176773,93002
+Max Planck Society,Max-Planck-Institut für Mathematik,671,0.767511177347243,93002
+Max Planck Society,Max-Planck-Institut für Mathematik in den Naturwissenschaften (MIS),1129,0.7449069973427812,93002
+Max Planck Society,Max-Planck-Institut für medizinische Forschung,648,0.6712962962962963,93002
+Max Planck Society,Max-Planck-Institut für Menschheitsgeschichte,520,0.6923076923076923,93002
+Max Planck Society,Max-Planck-Institut für Meteorologie (MPI-M),1452,0.7568870523415978,93002
+Max Planck Society,Max-Planck-Institut für Mikrostrukturphysik,1398,0.5665236051502146,93002
+Max Planck Society,Max-Planck-Institut für molekulare Biomedizin,622,0.7733118971061094,93002
+Max Planck Society,Max-Planck-Institut für molekulare Genetik (MPIMG),1453,0.8004129387474191,93002
+Max Planck Society,Max-Planck-Institut für molekulare Pflanzenphysiologie (MPIMP),1430,0.7034965034965035,93002
+Max Planck Society,Max-Planck-Institut für molekulare Physiologie,820,0.5,93002
+Max Planck Society,Max-Planck-Institut für molekulare Zellbiologie und Genetik,1321,0.7388342165026495,93002
+Max Planck Society,Max-Planck-Institut für Neurobiologie,487,0.7412731006160165,93002
+Max Planck Society,Max-Planck-Institut für Ornithologie,1234,0.6288492706645057,93002
+Max Planck Society,Max-Planck-Institut für Pflanzenzüchtungsforschung,1089,0.7392102846648301,93002
+Max Planck Society,Max-Planck-Institut für Physik (Werner-Heisenberg-Institut),2831,0.946661956905687,93002
+Max Planck Society,Max-Planck-Institut für Physik komplexer Systeme,2463,0.8197320341047503,93002
+Max Planck Society,Max-Planck-Institut für Plasmaphysik (IPP),3325,0.7443609022556391,93002
+Max Planck Society,Max-Planck-Institut für Polymerforschung,3376,0.32257109004739337,93002
+Max Planck Society,Max-Planck-Institut für Psychiatrie (Deutsche Forschungsanstalt für Psychiatrie),1506,0.5517928286852589,93002
+Max Planck Society,Max-Planck-Institut für Quantenoptik (MPQ),1538,0.7594278283485045,93002
+Max Planck Society,Max-Planck-Institut für Radioastronomie,2741,0.9631521342575702,93002
+Max Planck Society,Max-Planck-Institut für Softwaresysteme,104,0.4519230769230769,93002
+Max Planck Society,Max-Planck-Institut für Sonnensystemforschung,2287,0.7542632269348492,93002
+Max Planck Society,Max-Planck-Institut für Sozialrecht und Sozialpolitik,118,0.4576271186440678,93002
+Max Planck Society,Max-Planck-Institut für Steuerrecht und Öffentliche Finanzen,66,0.7121212121212122,93002
+Max Planck Society,Max-Planck-Institut für Stoffwechselforschung,656,0.649390243902439,93002
+Max Planck Society,Max-Planck-Institut für Struktur und Dynamik der Materie,505,0.8,93002
+Max Planck Society,Max-Planck-Institut für terrestrische Mikrobiologie,861,0.6329849012775842,93002
+Max Planck Society,Max-Planck-Institut für Wissenschaftsgeschichte,244,0.26639344262295084,93002
+Max Planck Society,Max-Planck-Institut für Zellbiologie (MPIZB),2,0.5,93002
+Max Planck Society,Max-Planck-Institut Halbleiterlabor (HLL),99,0.46464646464646464,93002
+Max Planck Society,Max-Planck-Institut zur Erforschung multireligiöser und multiethnischer Gesellschaften,133,0.24812030075187969,93002
+Max Planck Society,Max-Planck-Institut zur Erforschung von Gemeinschaftsgütern,319,0.5360501567398119,93002
+Universities,Albert-Ludwigs-Universität Freiburg im Breisgau,26102,0.47781779174009653,738524
+Universities,Bauhaus-Universität Weimar,887,0.24239007891770012,738524
+Universities,Bergische Universität Wuppertal,4291,0.5385690981123281,738524
+Universities,Brandenburgische Technische Universität Cottbus-Senftenberg,2606,0.5130468150422103,738524
+Universities,Carl von Ossietzky Universität Oldenburg,5709,0.42686985461551935,738524
+Universities,Charité - Universitätsmedizin Berlin,28745,0.45263524091146284,738524
+Universities,Christian-Albrechts-Universität zu Kiel,17081,0.4286048826181137,738524
+Universities,Deutsche Sporthochschule Köln,1780,0.3202247191011236,738524
+Universities,Deutsche Universität für Verwaltungswissenschaften Speyer,56,0.16071428571428573,738524
+Universities,Eberhard Karls Universität Tübingen,27366,0.4834100708908865,738524
+Universities,EBS Universität für Wirtschaft und Recht,281,0.15302491103202848,738524
+Universities,Ernst-Moritz-Arndt-Universität Greifswald,8208,0.39522417153996103,738524
+Universities,ESCP Europe Wirtschaftshochschule Berlin e.V.,107,0.16822429906542055,738524
+Universities,Europa-Universität Flensburg,83,0.24096385542168675,738524
+Universities,Europa-Universität Viadrina Frankfurt (Oder),427,0.2576112412177986,738524
+Universities,FernUniversität in Hagen,735,0.272108843537415,738524
+Universities,Frankfurt School of Finance & Management,313,0.329073482428115,738524
+Universities,Freie Universität Berlin,17521,0.45750813309742594,738524
+Universities,Friedrich-Alexander-Universität Erlangen-Nürnberg,27537,0.4246286814104659,738524
+Universities,Friedrich-Schiller-Universität Jena,18886,0.3893360160965795,738524
+Universities,Georg-August-Universität Göttingen,26459,0.5027778827620092,738524
+Universities,Gottfried Wilhelm Leibniz Universität Hannover,9345,0.41144997324772603,738524
+Universities,HafenCity Universität Hamburg,84,0.2857142857142857,738524
+Universities,Heinrich-Heine-Universität Düsseldorf,16538,0.47012939895997097,738524
+Universities,Helmut-Schmidt-Universität/Universität der Bundeswehr Hamburg,793,0.24337957124842372,738524
+Universities,Hertie School of Governance,277,0.3249097472924188,738524
+Universities,Humboldt-Universität zu Berlin,15728,0.5005722278738556,738524
+Universities,International Psychoanalytic University Berlin,146,0.2602739726027397,738524
+Universities,International University in Germany gGmbH i.L.,3,0.6666666666666666,738524
+Universities,Jacobs University Bremen,2752,0.4160610465116279,738524
+Universities,"Johann Wolfgang Goethe-Universität, Frankfurt am Main",24080,0.4639119601328904,738524
+Universities,Johannes Gutenberg-Universität Mainz,22351,0.4870028186658315,738524
+Universities,Julius-Maximilians-Universität Würzburg,19629,0.5116409394263589,738524
+Universities,Justus-Liebig-Universität Gießen,15843,0.4583096635738181,738524
+Universities,Karlsruher Institut für Technologie,24878,0.4024841225178873,738524
+Universities,Katholische Universität Eichstätt - Ingolstadt,537,0.2886405959031657,738524
+Universities,Leuphana Universität Lüneburg,1733,0.36641661858049623,738524
+Universities,Ludwig-Maximilians-Universität München,45821,0.5225769843521529,738524
+Universities,Martin-Luther-Universität Halle-Wittenberg,11024,0.3749092888243832,738524
+Universities,Medizinische Hochschule Brandenburg Theodor Fontane,138,0.3188405797101449,738524
+Universities,Medizinische Hochschule Hannover (MHH),15456,0.46726190476190477,738524
+Universities,Otto-Friedrich-Universität Bamberg,1254,0.3062200956937799,738524
+Universities,Otto-von-Guericke-Universität Magdeburg,8893,0.3828854154953334,738524
+Universities,Philipps-Universität Marburg,13601,0.3777663407102419,738524
+Universities,Private Universität Witten/Herdecke gGmbH,3704,0.3647408207343413,738524
+Universities,Psychologische Hochschule Berlin,93,0.25806451612903225,738524
+Universities,Rheinisch-Westfälische Technische Hochschule Aachen,27458,0.39788039915507323,738524
+Universities,Rheinische Friedrich-Wilhelms-Universität Bonn,27440,0.5217930029154519,738524
+Universities,Ruhr-Universität Bochum,19964,0.39981967541574837,738524
+Universities,Ruprecht-Karls-Universität Heidelberg,44949,0.5208124763620993,738524
+Universities,Steinbeis-Hochschule Berlin,57,0.24561403508771928,738524
+Universities,Stiftung Tierärztliche Hochschule Hannover,4080,0.37549019607843137,738524
+Universities,Technische Universität Bergakademie Freiberg,3791,0.1965180691110525,738524
+Universities,Technische Universität Berlin,13210,0.4058289174867525,738524
+Universities,Technische Universität Carolo-Wilhelmina zu Braunschweig,7681,0.33693529488347873,738524
+Universities,Technische Universität Chemnitz,3847,0.30699246165843513,738524
+Universities,Technische Universität Clausthal,1962,0.1834862385321101,738524
+Universities,Technische Universität Darmstadt,11255,0.36392714349178146,738524
+Universities,Technische Universität Dortmund,8208,0.4580896686159844,738524
+Universities,Technische Universität Dresden,26428,0.41459815347358864,738524
+Universities,Technische Universität Hamburg-Harburg,2601,0.279123414071511,738524
+Universities,Technische Universität Ilmenau,2524,0.29397781299524567,738524
+Universities,Technische Universität Kaiserslautern,4749,0.3950305327437355,738524
+Universities,Technische Universität München,39459,0.47368154286728,738524
+Universities,Universität Augsburg,3109,0.556449018977163,738524
+Universities,Universität Bayreuth,7312,0.3360229759299781,738524
+Universities,Universität Bielefeld,7813,0.49801612696787406,738524
+Universities,Universität Bremen,10027,0.3986237159668894,738524
+Universities,Universität der Bundeswehr München,1285,0.2529182879377432,738524
+Universities,Universität des Saarlandes,12003,0.395651087228193,738524
+Universities,Universität Duisburg-Essen,17884,0.42479311116081414,738524
+Universities,Universität Erfurt,409,0.22249388753056235,738524
+Universities,Universität Hamburg,31223,0.49578836114402847,738524
+Universities,Universität Hildesheim,415,0.2457831325301205,738524
+Universities,Universität Hohenheim,5503,0.31764492095220787,738524
+Universities,Universität Kassel,3705,0.3049932523616734,738524
+Universities,Universität Koblenz-Landau,1641,0.27178549664838514,738524
+Universities,Universität Konstanz,6890,0.6805515239477503,738524
+Universities,Universität Leipzig,19001,0.40197884321877797,738524
+Universities,Universität Mannheim,2945,0.38438030560271647,738524
+Universities,Universität Osnabrück,3188,0.42910915934755334,738524
+Universities,Universität Paderborn,3441,0.33594885207788433,738524
+Universities,Universität Passau,671,0.35171385991058124,738524
+Universities,Universität Potsdam,9146,0.4866608353378526,738524
+Universities,Universität Regensburg,13570,0.4768607221812822,738524
+Universities,Universität Rostock,11280,0.37375886524822693,738524
+Universities,Universität Siegen,3867,0.49366433928109643,738524
+Universities,Universität Stuttgart,10923,0.3438615764899753,738524
+Universities,Universität Trier,2102,0.3292102759276879,738524
+Universities,Universität Ulm,15832,0.4554067710965134,738524
+Universities,Universität Vechta,249,0.14859437751004015,738524
+Universities,Universität zu Köln,22235,0.4795592534292782,738524
+Universities,Universität zu Lübeck,7238,0.4492953854655982,738524
+Universities,Westfälische Wilhelms-Universität Münster,23252,0.4172974367796319,738524
+Universities,WHU - Otto Beisheim School of Management,540,0.21666666666666667,738524
+Universities,"Zeppelin Universität - Hochschule zwischen Wirtschaft, Kultur und Politik",224,0.2544642857142857,738524

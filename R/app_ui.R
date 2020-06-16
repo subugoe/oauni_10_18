@@ -10,7 +10,8 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # List the first level UI elements here 
     fluidPage(
-      h1("oadash")
+      h1("oadash"),
+      mod_scatter_ui("scatter_ui_1")
     )
   )
 }

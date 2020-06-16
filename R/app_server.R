@@ -6,5 +6,6 @@
 #' @noRd
 app_server <- function( input, output, session ) {
   # List the first level callModules here
+  callModule(mod_scatter_server, "scatter_ui_1")
 
 }

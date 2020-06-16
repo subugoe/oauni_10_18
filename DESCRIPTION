@@ -8,7 +8,20 @@ License: MIT + file LICENSE
 Imports: 
     config,
     golem,
-    shiny
+    shiny,
+    processx,
+    htmltools,
+    shinydashboard,
+    plotly,
+    readr,
+    dplyr,
+    ggplot2,
+    forcats,
+    cowplot
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat
+Depends: 
+    R (>= 2.10)

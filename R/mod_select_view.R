@@ -23,13 +23,16 @@ mod_select_view_server <- function(input, output, session, r){
   
   observe({
     inst <- r$dataset %>% .$INST_NAME
-    updateSelectInput( session, "inst", choices = inst)
+    updateSelectInput( session, "inst", choices = c(All = "", inst))
   })
   
   data <- reactive({
-    req(input$inst)
+    if(is.null(input$inst)) {
+      return(r$dataset)
+    } else {
     r$dataset %>%
       dplyr::filter(`INST_NAME` %in% input$inst) 
+    }
     }
   )
  output$plot <- renderPlotly({

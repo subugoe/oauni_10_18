@@ -12,8 +12,8 @@
 #'
 scatterplot_oa <- function(oa_shares_inst_sector, insts = NULL) {
   ggplot(oa_shares_inst_sector, aes(x = n_total, y = oa_share, label = INST_NAME)) +
-    geom_point(color = "#56b4e9", alpha = .7)  +
-    geom_point(data = insts, color = "red",  aes(x = n_total, y = oa_share, label = INST_NAME)) +
+    geom_point(color = "grey80", alpha = .7, size = 2)  +
+    geom_point(data = insts, color = "#56b4e9",  aes(x = n_total, y = oa_share, label = INST_NAME), size = 3) +
     scale_x_log10(labels = scales::number_format(big.mark = ","),
                   expand = expansion(mult = c(0.05, 0.1))) +
     scale_y_continuous(labels = scales::percent_format(accuracy = 5L),

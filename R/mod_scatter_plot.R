@@ -22,9 +22,9 @@ mod_scatter_plot_server <- function(input, output, session, r){
   
   output$plot <- renderPlotly({
     p <- scatterplot_oa(r$dataset, r$my_inst())
-    plotly::ggplotly(p, tooltip = "text") %>%
-      plotly::style(hoverlabel = list(bgcolor = "white"), hoveron = "fill")
-    
+     plotly::ggplotly(p, tooltip = "text") %>%
+       plotly::style(hoverlabel = list(bgcolor = "white"), hoveron = "fill") %>%
+       plotly::config(toImageButtonOptions = list(format = "svg"))
   })
 }
     

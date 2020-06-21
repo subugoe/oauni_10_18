@@ -6,12 +6,12 @@
 #' @importFrom forcats fct_rev fct_reorder
 #' @importFrom scales percent_format number_format
 #' @importFrom cowplot theme_minimal_grid
-#' @importFrom gghighlight gghighlight
 #' @return
 #' @export
 #'
 scatterplot_oa <- function(oa_shares_inst_sector, insts = NULL) {
-  ggplot(oa_shares_inst_sector, aes(x = n_total, y = oa_share, label = INST_NAME)) +
+  ggplot(oa_shares_inst_sector, aes(x = n_total, y = oa_share,
+                                    text = paste("<b>", INST_NAME, "</b>\n OA Share:", round(oa_share * 100, 2), "%\n Publications:", n_total))) +
     geom_point(color = "grey80", alpha = .7, size = 2)  +
     geom_point(data = insts, color = "#56b4e9",  aes(x = n_total, y = oa_share, label = INST_NAME), size = 3) +
     scale_x_log10(labels = scales::number_format(big.mark = ","),

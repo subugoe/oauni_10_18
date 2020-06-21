@@ -3,20 +3,35 @@
 #' @param request Internal parameter for `{shiny}`. 
 #'     DO NOT REMOVE.
 #' @import shiny
+#' @import shinydashboard
 #' @noRd
 app_ui <- function(request) {
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here
-    fluidPage(
-    h1("Open Access Uptake"),
-    selectInput("sector", "Choose a Sector:",
+    dashboardPage(
+      dashboardHeader(title = "Open Access Uptake"),
+      dashboardSidebar(
+        sidebarMenu(
+          menuItem("Scatterplot", tabName = "scatter", icon = icon("dashboard"))
+        ), collapsed = TRUE
+      ),
+      dashboardBody(
+        tabItems(
+          tabItem(tabName = "scatter",
+                  fluidRow(
+                    box(
+                      title = "Choose and highlight",
+    selectInput("sector", "Choose a sector:",
                 choices = unique(oa_shares_inst_sector$sector),
                 selected = "Universities"),
-    mod_select_view_ui("select_view_ui_1")
-    )
-  )
+    mod_select_view_ui("select_view_ui_1"), width = 4),
+    box(
+      title = "Publication volume vs OA Uptake (2010-18)",
+      mod_scatter_plot_ui("scatter_plot_ui_1"), width = 8)
+    ))
+  ))))
 }
 
 #' Add external Resources to the Application

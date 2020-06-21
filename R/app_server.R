@@ -12,5 +12,5 @@ app_server <- function( input, output, session ) {
       dplyr::filter(sector %in% input$sector)
   })
   callModule(mod_select_view_server, "select_view_ui_1", session = session, r = r)
- # callModule(mod_scatter_server, "scatter_ui_1")
+  callModule(mod_scatter_plot_server, "scatter_plot_ui_1", session = session, r = r)
 }

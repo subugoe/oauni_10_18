@@ -10,8 +10,7 @@
 mod_select_view_ui <- function(id){
   ns <- NS(id)
   tagList(
-    selectInput(ns("inst"), label = "Choose an institution:", choices = NULL, multiple = TRUE),
-    plotlyOutput(ns("plot"))
+    selectInput(ns("inst"), label = "Highlight institutions:", choices = NULL, multiple = TRUE)
   )
 }
     
@@ -26,19 +25,14 @@ mod_select_view_server <- function(input, output, session, r){
     updateSelectInput( session, "inst", choices = c(All = "", inst))
   })
   
-  data <- reactive({
+  r$my_inst <- reactive({
     if(is.null(input$inst)) {
-      return(r$dataset)
+      r$dataset
     } else {
-    r$dataset %>%
-      dplyr::filter(`INST_NAME` %in% input$inst) 
+      r$dataset %>%
+        dplyr::filter(`INST_NAME` %in% input$inst) 
     }
-    }
-  )
- output$plot <- renderPlotly({
-   p <- scatterplot_oa(r$dataset, data())
-   plotly::ggplotly(p) 
- })
+  })
 }
     
 ## To be copied in the UI

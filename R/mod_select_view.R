@@ -6,7 +6,8 @@
 #'
 #' @noRd 
 #'
-#' @importFrom shiny NS tagList 
+#' @importFrom shiny NS tagList reactive selectInput observe updateSelectInput
+#' @importFrom dplyr %>% filter
 mod_select_view_ui <- function(id){
   ns <- NS(id)
   tagList(

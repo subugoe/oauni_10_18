@@ -6,7 +6,9 @@
 #'
 #' @noRd 
 #'
-#' @importFrom shiny NS tagList 
+#' @importFrom shiny NS tagList
+#' @importFrom plotly plotlyOutput ggplotly renderPlotly style config
+#' @importFrom dplyr %>%
 mod_scatter_plot_ui <- function(id){
   ns <- NS(id)
   tagList(

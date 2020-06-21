@@ -11,8 +11,18 @@
 mod_scatter_ui <- function(id){
   ns <- NS(id)
   tagList(
-    h2("Open-Access-Anteil und Publikationsaufkommen im Vergleich"),
-    plotly::plotlyOutput(ns("plot"))
+    fluidRow(
+      column(4, 
+           selectInput(ns("sect"), "Sector", 
+                       choices = unique(oa_shares_inst_sector$sector), 
+                       selected = "Universities")
+     ),
+     column(4, 
+            selectInput(ns("inst"), "Institution", 
+                        choices = NULL))), 
+    fluidRow(
+      column(12, tableOutput("sector"))
+    )
   )
 }
     
@@ -21,11 +31,16 @@ mod_scatter_ui <- function(id){
 #' @noRd 
 mod_scatter_server <- function(input, output, session){
   ns <- session$ns
-  p <- scatterplot_oa(oa_shares_inst_sector)
-  output$plot <- plotly::renderPlotly({
-    plotly::ggplotly(p)
+  sector <- reactive(
+    {
+      oa_shares_inst_sector[oa_shares_inst_sector$sector %in% input$sector,]
+    })
+  
+  observeEvent(sector(), {
+    choices <- unique(sector()$INST_NAME)
+    updateSelectInput(session, "inst", choices = choices) 
   })
- 
+  renderTable(sector())
 }
     
 ## To be copied in the UI

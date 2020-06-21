@@ -8,10 +8,13 @@ app_ui <- function(request) {
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
-    # List the first level UI elements here 
+    # List the first level UI elements here
     fluidPage(
-      h1("oadash"),
-      mod_scatter_ui("scatter_ui_1")
+    h1("Open Access Uptake"),
+    selectInput("sector", "Choose a Sector:",
+                choices = unique(oa_shares_inst_sector$sector),
+                selected = "Universities"),
+    mod_select_view_ui("select_view_ui_1")
     )
   )
 }

@@ -7,7 +7,9 @@
 scatterplot_oa(oa_shares_inst_sector, insts = NULL)
 }
 \arguments{
-\item{oa_shares_inst_sector}{data}
+\item{oa_shares_inst_sector}{dataset}
+
+\item{insts}{institutions that you want to highlight}
 }
 \value{
 

@@ -1,6 +1,7 @@
 #' Create OA / Overall Scatterplot
 #'
-#' @param oa_shares_inst_sector data
+#' @param oa_shares_inst_sector dataset 
+#' @param insts institutions that you want to highlight
 #'
 #' @import ggplot2
 #' @importFrom forcats fct_rev fct_reorder

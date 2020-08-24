@@ -10,12 +10,19 @@
 #'
 #' @return
 #' @export
-boxplot_oa <- function(oa_shares_inst_sec_boxplot, insts = NULL) {
-  pp <- ggplot(oa_shares_inst_sec_boxplot,
+boxplot_oa <- function(data = NULL, insts = NULL) {
+  pp <- ggplot(data,
                aes(
                  x = fct_rev(fct_reorder(sec_abbr, articles)),
                  y = prop,
-                 color = sector_cat
+                 color = sector_cat,
+                 text = paste(
+                   "<b>",
+                   INST_NAME,
+                   "</b>\n OA Share:",
+                   round(prop * 100, 2),
+                   "%\n Publications:",
+                   articles)
                )) +
     geom_boxplot() +
     scale_color_manual(values = c("#684747", "#f68f46ff", "#a65c85ff", "#051461")) +
@@ -27,35 +34,15 @@ boxplot_oa <- function(oa_shares_inst_sec_boxplot, insts = NULL) {
       geom_point(
         alpha = 0.1,
         pch = 21,
-        position = position_jitterdodge(dodge.width = 0.2),
-        aes(
-          text = paste(
-            "<b>",
-            INST_NAME,
-            "</b>\n OA Share:",
-            round(prop * 100, 2),
-            "%\n Publications:",
-            articles
-          )
+        position = position_jitterdodge(dodge.width = 0.2)
         )
-      )
   } else {
     pp <- pp + geom_point(
       data = insts,
       size = 3,
       alpha = 0.5,
-      position = position_jitterdodge(dodge.width = 0.2),
-      aes(
-        text = paste(
-          "<b>",
-          INST_NAME,
-          "</b>\n OA Share:",
-          round(prop * 100, 2),
-          "%\n Publications:",
-          articles
-        )
+      position = position_jitterdodge(dodge.width = 0.2)
       )
-    )
   }
   pp +
     scale_y_continuous(

@@ -4,12 +4,12 @@
 \alias{boxplot_oa}
 \title{Box plot}
 \usage{
-boxplot_oa(oa_shares_inst_sec_boxplot, insts = NULL)
+boxplot_oa(data = NULL, insts = NULL)
 }
 \arguments{
-\item{oa_shares_inst_sec_boxplot}{dataset}
-
 \item{insts}{institutions that you want to highlight}
+
+\item{oa_shares_inst_sec_boxplot}{dataset}
 }
 \value{
 

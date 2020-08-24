@@ -42,7 +42,7 @@ mod_boxplot_server <- function(input, output, session) {
     
     boxplot_df <-
       oa_shares_inst_sec_boxplot %>%
-      dplyr::filter(PUBYEAR %in% input$pubyear) %>%
+      dplyr::filter(between(PUBYEAR, min(input$pubyear), max(input$pubyear))) %>%
       dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
       dplyr::summarise(oa_articles = sum(oa_articles),
                        articles = sum(articles)) %>%

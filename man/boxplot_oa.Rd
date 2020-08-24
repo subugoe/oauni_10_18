@@ -4,7 +4,7 @@
 \alias{boxplot_oa}
 \title{Box plot}
 \usage{
-boxplot_oa(oa_shares_inst_sec_boxplot)
+boxplot_oa(oa_shares_inst_sec_boxplot, insts = NULL)
 }
 \arguments{
 \item{oa_shares_inst_sec_boxplot}{dataset}

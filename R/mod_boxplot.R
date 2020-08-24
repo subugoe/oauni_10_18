@@ -34,25 +34,37 @@ mod_boxplot_ui <- function(id){
 #' @importFrom plotly ggplotly style config layout
 #'
 #' @noRd 
-mod_boxplot_server <- function(input, output, session){
+mod_boxplot_server <- function(input, output, session) {
   ns <- session$ns
   
   output$boxplot <- renderPlotly({
-   req(input$pubyear)
-
-    boxplot_df <- 
+    req(input$pubyear)
+    
+    boxplot_df <-
       oa_shares_inst_sec_boxplot %>%
       dplyr::filter(PUBYEAR %in% input$pubyear) %>%
       dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
       dplyr::summarise(oa_articles = sum(oa_articles),
                        articles = sum(articles)) %>%
-      dplyr::mutate(prop = oa_articles / articles) 
-   
-    p <- boxplot_oa(boxplot_df)
-    plotly::ggplotly(p, tooltip = "text") %>%
-      plotly::style(hoverlabel = list(bgcolor = "white"), hoveron = "fill") %>%
+      dplyr::mutate(prop = oa_articles / articles)
+    
+    if (is.null(input$inst)) {
+      p <- boxplot_oa(boxplot_df)
+    } else {
+      p <- boxplot_oa(boxplot_df,
+                      insts = dplyr::filter(boxplot_df, INST_NAME %in% input$inst))
+      NULL
+    }
+    
+    p <- plotly::ggplotly(p, tooltip = "text") %>%
+      plotly::style(hoverlabel = list(bgcolor = "white"),
+                    hoveron = "fill") %>%
       plotly::config(toImageButtonOptions = list(format = "svg")) %>%
-      plotly::layout(legend = list(orientation = "h", x = 0.4, y = -0.2))
+      plotly::layout(legend = list(
+        orientation = "h",
+        x = 0.4,
+        y = -0.2
+      ))
   })
 }
     

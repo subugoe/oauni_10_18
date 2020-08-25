@@ -5,36 +5,41 @@
 #' @param id,input,output,session Internal parameters for {shiny}.
 #' @importFrom plotly plotlyOutput
 #'
-#' @noRd 
+#' @noRd
 #'
-#' @importFrom shiny NS tagList 
-mod_boxplot_ui <- function(id){
+#' @importFrom shiny NS tagList
+mod_boxplot_ui <- function(id) {
   ns <- NS(id)
-  
-  fluidRow(
-      box(
-        title = "Highlight institutions",
-        selectInput(ns("inst"),
-                    "Choose insitutions",
-                    choices = select_inst_sector,
-                    multiple = TRUE),
-        sliderInput(ns("pubyear"), label = "Pick Year Range", 
-                    min = 2010, max = 2018, value = c(2010, 2018), sep = ""
-        ),
-        width = 4
+  fluidPage(fluidRow(
+    box(
+      title = "Benchmark OA uptake",
+      selectInput(
+        ns("inst"),
+        "German research institutions",
+        choices = c("Select ..." = "", select_inst_sector),
+        multiple = TRUE,
+        selected = "Select ..."
       ),
-      box(
-        plotly::plotlyOutput(ns("boxplot")), width = 8
-      )
-  )
+      sliderInput(
+        ns("pubyear"),
+        label = "Publication period",
+        min = 2010,
+        max = 2018,
+        value = c(2010, 2018),
+        sep = ""
+      ),
+      width = 4
+    ),
+    box(plotly::plotlyOutput(ns("boxplot")), width = 8)
+  ))
 }
-    
+
 #' boxplot Server Function
-#' 
+#'
 #' @importFrom dplyr filter between group_by summarise mutate
 #' @importFrom plotly ggplotly style config layout
 #'
-#' @noRd 
+#' @noRd
 mod_boxplot_server <- function(input, output, session) {
   ns <- session$ns
   
@@ -64,14 +69,13 @@ mod_boxplot_server <- function(input, output, session) {
       plotly::layout(legend = list(
         orientation = "h",
         x = 0.4,
-        y = -0.2
+        y = -0.4
       ))
   })
 }
-    
+
 ## To be copied in the UI
 # mod_boxplot_ui("boxplot_ui_1")
-    
+
 ## To be copied in the server
 # callModule(mod_boxplot_server, "boxplot_ui_1")
- 

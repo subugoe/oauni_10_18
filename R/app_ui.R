@@ -11,34 +11,35 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # List the first level UI elements here
     dashboardPage(
-      dashboardHeader(title = "Open Access Uptake"),
+      dashboardHeader(title = "Open Access in Germany 2010-18",
+                      titleWidth = 300),
       dashboardSidebar(sidebarMenu(
         menuItem(
-          "Scatterplot",
-          tabName = "scatter",
-          icon = icon("dashboard")
+          "Productivity vs. OA Uptake",
+          tabName = "scatter"
         ),
-        menuItem("Box Plot", tabName = "boxplot", icon = icon("dashboard"))
-      ), collapsed = TRUE),
+        menuItem("OA variations", tabName = "boxplot")
+      ), collapsed = TRUE,
+      width = 300),
       dashboardBody(tabItems(
         # Scatterplot
         tabItem(tabName = "scatter",
                 fluidRow(
                   box(
-                    title = "Choose and highlight",
+                    title = "Publication volume vs OA Uptake (2010-18)",
+                    mod_scatter_plot_ui("scatter_plot_ui_1"),
+                    width = 8
+                  ),
+                  box(
+                    title = NULL,
                     selectInput(
                       "sector",
-                      "Choose a sector:",
+                      "Change sector:",
                       choices = unique(oa_shares_inst_sector$sector),
                       selected = "Universities"
                     ),
                     mod_select_view_ui("select_view_ui_1"),
                     width = 4
-                  ),
-                  box(
-                    title = "Publication volume vs OA Uptake (2010-18)",
-                    mod_scatter_plot_ui("scatter_plot_ui_1"),
-                    width = 8
                   )
                 )),
         # Box Plot

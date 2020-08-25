@@ -11,6 +11,8 @@
 mod_boxplot_ui <- function(id) {
   ns <- NS(id)
   fluidPage(fluidRow(
+    box(title = "OA Uptake across sectors",
+      plotly::plotlyOutput(ns("boxplot")), width = 8),
     box(
       title = "Benchmark OA uptake",
       selectInput(
@@ -29,8 +31,7 @@ mod_boxplot_ui <- function(id) {
         sep = ""
       ),
       width = 4
-    ),
-    box(plotly::plotlyOutput(ns("boxplot")), width = 8)
+    )
   ))
 }
 

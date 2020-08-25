@@ -84,6 +84,7 @@ inst_to_drop <- oa_shares_inst_sec_boxplot %>%
   pull(INST_NAME)
 
 oa_shares_inst_sec_boxplot <- oa_shares_inst_sec_boxplot %>% 
-  filter(!INST_NAME %in% inst_to_drop)
+  filter(!INST_NAME %in% inst_to_drop) %>%
+  ungroup()
 
 usethis::use_data(oa_shares_inst_sec_boxplot, overwrite = TRUE)

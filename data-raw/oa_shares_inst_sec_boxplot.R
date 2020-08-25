@@ -85,6 +85,7 @@ inst_to_drop <- oa_shares_inst_sec_boxplot %>%
 
 oa_shares_inst_sec_boxplot <- oa_shares_inst_sec_boxplot %>% 
   filter(!INST_NAME %in% inst_to_drop) %>%
-  ungroup()
+  ungroup() %>%
+  mutate(sec_abbr = forcats::fct_rev(forcats::fct_reorder(sec_abbr, articles)))
 
 usethis::use_data(oa_shares_inst_sec_boxplot, overwrite = TRUE)

@@ -10,12 +10,13 @@
 #' @importFrom shiny NS tagList 
 mod_boxplot_ui <- function(id){
   ns <- NS(id)
+  
   fluidRow(
       box(
         title = "Highlight institutions",
         selectInput(ns("inst"),
                     "Choose insitutions",
-                    choices = unique(oa_shares_inst_sector$INST_NAME),
+                    choices = select_inst_sector,
                     multiple = TRUE),
         sliderInput(ns("pubyear"), label = "Pick Year Range", 
                     min = 2010, max = 2018, value = c(2010, 2018), sep = ""

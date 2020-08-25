@@ -13,7 +13,7 @@
 boxplot_oa <- function(data = NULL, insts = NULL) {
   pp <- ggplot(data,
                aes(
-                 x = fct_rev(fct_reorder(sec_abbr, articles)),
+                 x = sec_abbr,
                  y = prop,
                  color = sector_cat,
                  text = paste(

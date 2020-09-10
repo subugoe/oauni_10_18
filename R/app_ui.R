@@ -15,7 +15,7 @@ app_ui <- function(request) {
                       titleWidth = 300),
       dashboardSidebar(sidebarMenu(
         menuItem(
-          "Productivity vs. OA Uptake",
+          "OA percentage vs. productivity",
           tabName = "scatter"
         ),
         menuItem("OA variations", tabName = "boxplot")
@@ -26,7 +26,7 @@ app_ui <- function(request) {
         tabItem(tabName = "scatter",
                 fluidRow(
                   box(
-                    title = "Publication volume vs OA Uptake (2010-18)",
+                    title = "OA percentage vs. publication volume (2010-18)",
                     mod_scatter_plot_ui("scatter_plot_ui_1"),
                     width = 8
                   ),
@@ -34,7 +34,7 @@ app_ui <- function(request) {
                     title = NULL,
                     selectInput(
                       "sector",
-                      "Change sector:",
+                      "Chose sector:",
                       choices = unique(oa_shares_inst_sector$sector),
                       selected = "Universities"
                     ),

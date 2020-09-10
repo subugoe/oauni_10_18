@@ -50,15 +50,26 @@ exclude_from_inst_analysis <-
 pubs_cat <- pubs_cat %>%
   anti_join(exclude_from_inst_analysis, by = c("INST_NAME" = "NAME"))
 
+#institutions with less than 100 publications
+inst_to_drop <- pubs_cat %>% 
+  group_by(INST_NAME) %>% 
+  summarise(n = n_distinct(PK_ITEMS)) %>% 
+  filter(n < 100) %>% 
+  pull(INST_NAME)
+
 oa_inst_sec <- pubs_cat %>%
   filter(oa_category != "not_oa") %>%
+  filter(!INST_NAME %in% inst_to_drop) %>%
   group_by(PUBYEAR, INST_NAME, sector, sec_abbr) %>%
   summarise(oa_articles = n_distinct(PK_ITEMS))
 all_inst_sec <-  pubs_cat %>%
+  filter(!INST_NAME %in% inst_to_drop) %>%
   group_by(PUBYEAR, INST_NAME, sector, sec_abbr) %>%
   summarise(articles = n_distinct(PK_ITEMS))
-oa_shares_inst_sec_boxplot <-
-  inner_join(oa_inst_sec, all_inst_sec)  %>%
+oa_shares_inst_sec_boxplot <- all_inst_sec %>% 
+  left_join(oa_inst_sec)  %>%
+  ungroup() %>% 
+  mutate(oa_articles = ifelse(is.na(oa_articles), 0, oa_articles)) %>% 
   mutate(prop = oa_articles / articles) %>%
   mutate(sector_cat = case_when(
     sec_abbr == "UNI" ~ "Universities",
@@ -66,7 +77,7 @@ oa_shares_inst_sec_boxplot <-
     sec_abbr == "WGL" ~ "Diverse missions",
     sec_abbr %in% c("FhS", "GRA") ~ "Practise-oriented"
   )
-) %>%
+  ) %>%
   mutate(sector_cat = factor(
     sector_cat,
     levels = c(
@@ -75,17 +86,8 @@ oa_shares_inst_sec_boxplot <-
       "Diverse missions",
       "Practise-oriented"
     )
-  ))
-# institutions with less than 100 publications
-inst_to_drop <- oa_shares_inst_sec_boxplot %>% 
-  group_by(INST_NAME) %>% 
-  summarise(n = sum(articles)) %>% 
-  filter(n < 100) %>% 
-  pull(INST_NAME)
-
-oa_shares_inst_sec_boxplot <- oa_shares_inst_sec_boxplot %>% 
-  filter(!INST_NAME %in% inst_to_drop) %>%
-  ungroup() %>%
+  )) %>% 
   mutate(sec_abbr = forcats::fct_rev(forcats::fct_reorder(sec_abbr, articles)))
+
 
 usethis::use_data(oa_shares_inst_sec_boxplot, overwrite = TRUE)

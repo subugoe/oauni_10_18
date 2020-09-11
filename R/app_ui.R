@@ -40,6 +40,11 @@ app_ui <- function(request) {
                     ),
                     mod_select_view_ui("select_view_ui_1"),
                     width = 4
+                  ),
+                  box(
+                    title = NULL,
+                    mod_display_caption_ui("display_caption_ui_1"),
+                    width = 8
                   )
                 )),
         # Box Plot

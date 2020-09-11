@@ -13,5 +13,6 @@ app_server <- function( input, output, session ) {
   })
   callModule(mod_select_view_server, "select_view_ui_1", session = session, r = r)
   callModule(mod_scatter_plot_server, "scatter_plot_ui_1", session = session, r = r)
+  callModule(mod_display_caption_server, "display_caption_ui_1")
   callModule(mod_boxplot_server, "boxplot_ui_1")
 }

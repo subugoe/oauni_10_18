@@ -31,7 +31,10 @@ mod_boxplot_ui <- function(id) {
         sep = ""
       ),
       width = 4
-    )
+    ),
+    box(title = NULL,
+        textOutput(ns("caption_box")),
+        width = 8)
   ))
 }
 
@@ -73,6 +76,8 @@ mod_boxplot_server <- function(input, output, session) {
         y = -0.4
       ))
   })
+  
+  output$caption_box <- renderText("OA shares of German research institutions per sector. The color of the boxes groups sectors into universities with a typically high total journal publication output, research-oriented institutes with a medium journal publication output and practise oriented institutions with a comparatively low journal publication output. Gray points display the OA shares for individual institutions.")
 }
 
 ## To be copied in the UI

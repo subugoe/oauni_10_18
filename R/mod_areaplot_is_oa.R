@@ -12,9 +12,10 @@ mod_areaplot_is_oa_ui <- function(id){
   ns <- NS(id)
   fluidPage(fluidRow(
     box(title = "Open Access uptake in Germany 2010-2018: Interactive Supplement",
-        htmlOutput(ns("about")), width = 12),
+        htmlOutput(ns("about")), width = 12)),
+    fluidRow(
     box(title = "OA uptake in Germany (2010-2018)",
-        plotly::plotlyOutput(ns("areaplot")), width = 12),
+        plotly::plotlyOutput(ns("areaplot")), width = 8),
     box(title = NULL,
         radioButtons(
           ns("rel_numbers"),
@@ -23,11 +24,12 @@ mod_areaplot_is_oa_ui <- function(id){
           choiceNames = c("total number of articles, or", "relative proportions."),
           selected = FALSE
         ),
-        width = 12),
+        width = 4)),
+    fluidRow(
     box(title = NULL,
         textOutput(ns("caption_area")),
-        width = 12)
-  ))
+        width = 12))
+  )
 }
     
 #' areaplot_is_oa Server Function
@@ -36,9 +38,9 @@ mod_areaplot_is_oa_ui <- function(id){
 mod_areaplot_is_oa_server <- function(input, output, session){
   ns <- session$ns
   
-  output$about <- renderUI(HTML(paste("This dashboard illustrates the development of Open Access (OA) to journal articles from authors affiliated with German universities and non-university research institutions in the period 2010 - 2018. It serves as interactive supplementary material for a study performed in the first half of 2020 which was submitted to Scientometrics. A preprint is available on <a href='https://zenodo.org/record/3892951'>Zenodo</a>.",
-                                   "The development of the OA uptake is analysed for the different research sectors in Germany (universities, non-university research institutes of the Helmholtz Association, Fraunhofer Society, Max Planck Society, Leibniz Association, and government research agencies). Beyond determining the overall share of openly available articles, a systematic classification of distinct categories of OA publishing allows to identify different patterns of adoption to OA.",
-                                   sep = "<br/>")))
+  output$about <- renderUI(HTML(paste("<p>This dashboard let you explore the development of Open Access (OA) to journal articles from authors affiliated with German universities and non-university research institutions between 2010 - 2018. It serves as interactive supplementary material for: 
+                                      <p>Hobert, Anne, Jahn, Najko, Mayr, Philipp, Schmidt, Birgit, & Taubert, Niels. (2020). Open Access Uptake in Germany 2010-18: Adoption in a diverse research landscape. <a href='http://doi.org/10.5281/zenodo.3892951'>http://doi.org/10.5281/zenodo.3892951</a>[Preprint]</p></p>",
+                                   "<p>This work is based on bibliographic data from the Web of Science database of Clarivate Analytics, Philadelphia, PA, USA, and was supported by the German Federal Ministry of Education and Research within the funding stream “Quantitative research on the science sector”, projects OASE (grant number 01PU17005A) and OAUNI (grant numbers 01PU17023A and 01PU17023B).</p>")))
   
   output$areaplot <- renderPlotly({
     req(input$rel_numbers)

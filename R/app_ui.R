@@ -12,7 +12,7 @@ app_ui <- function(request) {
     # List the first level UI elements here
     dashboardPage(
       dashboardHeader(title = "Open Access in Germany 2010-18",
-                      titleWidth = 300),
+                      titleWidth = 270),
       dashboardSidebar(sidebarMenu(
         menuItem(
           "OA uptake in Germany",
@@ -23,8 +23,9 @@ app_ui <- function(request) {
           tabName = "scatter"
         ),
         menuItem("OA variations", tabName = "boxplot")
-      ), collapsed = TRUE,
-      width = 300),
+      ),
+      collapsed = FALSE,
+      width = 270),
       dashboardBody(tabItems(
         # Uptake (national level)
         tabItem(tabName = "uptake",

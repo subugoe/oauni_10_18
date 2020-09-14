@@ -34,7 +34,7 @@ app_ui <- function(request) {
                     title = NULL,
                     selectInput(
                       "sector",
-                      "Change sector:",
+                      "Pick sector:",
                       choices = unique(oa_shares_inst_sector$sector),
                       selected = "Universities"
                     ),

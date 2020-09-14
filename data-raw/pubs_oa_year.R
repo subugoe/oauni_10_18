@@ -59,7 +59,7 @@ pubs_oa_year <- pubs_cat %>%
     ),
     not_oa = "not_oa"
   ))  %>%
-  mutate(PUBYEAR = lubridate::ymd(paste0(PUBYEAR, "-01-01"))) %>% 
+  #mutate(PUBYEAR = lubridate::ymd(paste0(PUBYEAR, "-01-01"))) %>% 
   group_by(PUBYEAR) %>% 
   mutate(n_total_year = n_distinct(PK_ITEMS)) %>% 
   ungroup() %>% 

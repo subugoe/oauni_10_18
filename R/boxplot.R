@@ -19,7 +19,7 @@ boxplot_oa <- function(data = NULL, insts = NULL) {
                  text = paste(
                    "<b>",
                    INST_NAME,
-                   "</b>\n OA Share:",
+                   "</b>\n OA percentage:",
                    round(prop * 100, 2),
                    "%\n Publications:",
                    articles)

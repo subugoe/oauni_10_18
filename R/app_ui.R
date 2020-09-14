@@ -15,18 +15,25 @@ app_ui <- function(request) {
                       titleWidth = 300),
       dashboardSidebar(sidebarMenu(
         menuItem(
-          "Productivity vs. OA Uptake",
+          "OA uptake in Germany",
+          tabName = "uptake"
+        ),
+        menuItem(
+          "OA percentage vs. productivity",
           tabName = "scatter"
         ),
         menuItem("OA variations", tabName = "boxplot")
       ), collapsed = TRUE,
       width = 300),
       dashboardBody(tabItems(
+        # Uptake (national level)
+        tabItem(tabName = "uptake",
+                mod_areaplot_is_oa_ui("areaplot_is_oa_ui_1")),
         # Scatterplot
         tabItem(tabName = "scatter",
                 fluidRow(
                   box(
-                    title = "Publication volume vs OA Uptake (2010-18)",
+                    title = "OA percentage vs. publication volume (2010-18)",
                     mod_scatter_plot_ui("scatter_plot_ui_1"),
                     width = 8
                   ),
@@ -40,6 +47,11 @@ app_ui <- function(request) {
                     ),
                     mod_select_view_ui("select_view_ui_1"),
                     width = 4
+                  ),
+                  box(
+                    title = NULL,
+                    mod_display_caption_ui("display_caption_ui_1"),
+                    width = 8
                   )
                 )),
         # Box Plot

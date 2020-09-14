@@ -13,7 +13,7 @@
 scatterplot_oa <- function(oa_shares_inst_sector, insts = NULL) {
   ggplot(oa_shares_inst_sector, aes(x = n_total, y = oa_share)) +
     geom_smooth(formula = y ~ x, color = "#999999a0", method = "lm") +
-    geom_point(color = "grey80", alpha = .7, size = 2, aes(text = paste("<b>", INST_NAME, "</b>\n OA Share:", round(oa_share * 100, 2), "%\n Publications:", n_total)))  +
+    geom_point(color = "grey80", alpha = .7, size = 2, aes(text = paste("<b>", INST_NAME, "</b>\n OA percentage:", round(oa_share * 100, 2), "%\n Publications:", n_total)))  +
     geom_point(data = insts, color = "#56b4e9", size = 3) +
    # geom_smooth(formula = y ~ x, color = "#999999a0", method = "lm") +
     scale_x_log10(labels = scales::number_format(big.mark = ","),
@@ -25,7 +25,7 @@ scatterplot_oa <- function(oa_shares_inst_sector, insts = NULL) {
                 colour = "#d55e00", linetype ="dashed", size = 1) +
      geom_vline(aes(xintercept = median(n_total)),
                 colour = "#E69F00", linetype ="dashed", size = 1) +
-    labs(x = "Total Articles (logarithmic scale)", y = "OA percentage") +
+    labs(x = "Total articles (logarithmic scale)", y = "OA percentage") +
     theme_minimal_grid() +
     theme(legend.position = "none") +
     # bold facet labels

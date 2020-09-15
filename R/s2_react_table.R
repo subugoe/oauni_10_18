@@ -1,19 +1,15 @@
 #' Interactive tables for S2 summary data
 #'
-#' @param data 
+#' @param data the data
 #' @importFrom reactable reactable colDef colGroup colFormat
-#' @return
 #' @export
-#'
-#' @examples
 s2_react_table <- function(data, all = FALSE) {
-
  my_cols <- list(
     `Name of Institution` = colDef("Institution", minWidth = 150),
     `Total articles` = colDef(
       "Total Articles",
       cell = function(value) {
-        value = format(value, big.mark = ",")
+        value <- format(value, big.mark = ",")
       }
     ),
     `OA proportion` = colDef("OA(%)", format = colFormat(percent = TRUE,
@@ -116,10 +112,9 @@ s2_react_table <- function(data, all = FALSE) {
 
 #' Create color pal
 #'
-#' @param colors 
-#' @param bias 
+#' @param colors the colors
+#' @param bias the bias
 #'
-#' @return
 #' @importFrom grDevices colorRamp rgb
 #' @export
 #'
@@ -130,4 +125,3 @@ make_color_pal <- function(colors, bias = 1) {
 
 #' palette color
 pct_color <- make_color_pal(c("#ffffff", "#f2fbd2", "#c9ecb4", "#93d3ab", "#35b0ab"), bias = 1)
-

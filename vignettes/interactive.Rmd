@@ -1,0 +1,7 @@
+---
+title: "Interactive Dashboard"
+---
+
+```{r echo=FALSE}
+shinycaas::include_app2("https://oadash.azurewebsites.net")
+```

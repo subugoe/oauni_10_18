@@ -11,9 +11,6 @@ boxplot_oa(data = NULL, insts = NULL)
 
 \item{oa_shares_inst_sec_boxplot}{dataset}
 }
-\value{
-
-}
 \description{
 Box plot
 }

@@ -11,9 +11,6 @@ scatterplot_oa(oa_shares_inst_sector, insts = NULL)
 
 \item{insts}{institutions that you want to highlight}
 }
-\value{
-
-}
 \description{
 Create OA / Overall Scatterplot
 }

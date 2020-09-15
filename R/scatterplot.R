@@ -7,7 +7,6 @@
 #' @importFrom forcats fct_rev fct_reorder
 #' @importFrom scales percent_format number_format
 #' @importFrom cowplot theme_minimal_grid
-#' @return
 #' @export
 #'
 scatterplot_oa <- function(oa_shares_inst_sector, insts = NULL) {

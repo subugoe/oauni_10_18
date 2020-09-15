@@ -8,7 +8,6 @@
 #' @importFrom scales percent_format number_format
 #' @importFrom cowplot theme_minimal_hgrid
 #'
-#' @return
 #' @export
 boxplot_oa <- function(data = NULL, insts = NULL) {
   pp <- ggplot(data,

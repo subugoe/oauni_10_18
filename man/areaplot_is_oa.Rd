@@ -7,12 +7,9 @@
 areaplot_is_oa(data = NULL, rel_numbers = FALSE)
 }
 \arguments{
+\item{data}{dataset}
+
 \item{rel_numbers}{whether absolute or relative figures should be shown}
-
-\item{pubs_oa_year}{dataset}
-}
-\value{
-
 }
 \description{
 areaplot number of oa/not_oa articles

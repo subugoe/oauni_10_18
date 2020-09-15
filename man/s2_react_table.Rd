@@ -7,10 +7,7 @@
 s2_react_table(data, all = FALSE)
 }
 \arguments{
-\item{data}{}
-}
-\value{
-
+\item{data}{the data}
 }
 \description{
 Interactive tables for S2 summary data

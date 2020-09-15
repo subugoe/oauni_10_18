@@ -7,12 +7,9 @@
 make_color_pal(colors, bias = 1)
 }
 \arguments{
-\item{colors}{}
+\item{colors}{the colors}
 
-\item{bias}{}
-}
-\value{
-
+\item{bias}{the bias}
 }
 \description{
 Create color pal

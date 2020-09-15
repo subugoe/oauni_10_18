@@ -1,15 +1,13 @@
 #' areaplot number of oa/not_oa articles
 #' 
-#' @param pubs_oa_year dataset
+#' @param data dataset
 #' @param rel_numbers whether absolute or relative figures should be shown
 #' 
 #' @import ggplot2
 #' @importFrom forcats fct_rev
 #' @importFrom scales number_format extended_breaks
 #' 
-#' @return 
 #' @export
-
 areaplot_is_oa <- function(data = NULL, rel_numbers = FALSE) {
   if (rel_numbers){
     pp <- ggplot(data, aes(x = PUBYEAR,

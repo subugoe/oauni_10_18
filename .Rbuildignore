@@ -6,6 +6,13 @@ dev_history.R
 $run_dev.*
 ^LICENSE\.md$
 ^README\.Rmd$
-^CODE_OF_CONDUCT\.md$
-^app\.R$
 ^rsconnect$
+^codecov\.yml$
+^docs$
+^pkgdown$
+^vignettes$
+Dockerfile
+.dockerignore
+^\.github$
+.vscode
+oauni_10_18.code-workspace

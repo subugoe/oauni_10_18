@@ -30,6 +30,24 @@ mod_boxplot_ui <- function(id) {
         value = c(2010, 2018),
         sep = ""
       ),
+      radioButtons(
+        ns("oa_cat"),
+        label = "Which articles should be included?",
+        choiceValues = c("All",
+                          levels(oa_shares_inst_sec_boxplot$oa_host)[1:2],
+                          levels(oa_shares_inst_sec_boxplot$oa_category)),
+        choiceNames = c("All OA articles",
+                        "All journal-based OA",
+                        "All repository-based OA",
+                        "Articles in fully OA journals",
+                        "Articles available through non-fully OA journals",
+                        "OA via institutional repositories",
+                        "OA via disciplinary repositories",
+                        "OA via other OpenDOAR registered journals",
+                        "OA via repositories not registered with OpenDOAR",
+                        "Closed articles"),
+        selected = "All"
+      ),
       width = 4
     ),
     box(title = NULL,
@@ -50,13 +68,35 @@ mod_boxplot_server <- function(input, output, session) {
   output$boxplot <- renderPlotly({
     req(input$pubyear)
     
-    boxplot_df <-
-      oa_shares_inst_sec_boxplot %>%
-      dplyr::filter(between(PUBYEAR, min(input$pubyear), max(input$pubyear))) %>%
-      dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
-      dplyr::summarise(oa_articles = sum(oa_articles),
-                       articles = sum(articles)) %>%
-      dplyr::mutate(prop = oa_articles / articles)
+    if (input$oa_cat == "All"){
+      boxplot_df <- oa_shares_inst_sec_boxplot %>% 
+        dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, oa_articles) %>% 
+        dplyr::filter(between(PUBYEAR, min(input$pubyear), max(input$pubyear))) %>%
+        dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
+        dplyr::summarise(oa_articles = sum(oa_articles),
+                         articles = sum(articles)) %>%
+        dplyr::mutate(prop = oa_articles / articles)
+    } else {
+      if (input$oa_cat %in% c("journal", "repository")) {
+        boxplot_df <- oa_shares_inst_sec_boxplot %>% 
+          dplyr::filter(oa_host == input$oa_cat) %>% 
+          dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, n_host) %>% 
+          dplyr::filter(between(PUBYEAR, min(input$pubyear), max(input$pubyear))) %>%
+          dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
+          dplyr::summarise(n_host = sum(n_host),
+                           articles = sum(articles)) %>%
+          dplyr::mutate(prop = n_host / articles)
+      } else{
+        boxplot_df <- oa_shares_inst_sec_boxplot %>% 
+          dplyr::filter(oa_category == input$oa_cat) %>% 
+          dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, n_cat) %>% 
+          dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>% 
+          dplyr::summarise(n_cat = sum(n_cat),
+                           articles = sum(articles)) %>% 
+          dplyr::mutate(prop = n_cat / articles)
+      }
+    }
+
     
     if (is.null(input$inst)) {
       p <- boxplot_oa(boxplot_df)
@@ -66,6 +106,7 @@ mod_boxplot_server <- function(input, output, session) {
       NULL
     }
     
+
     p <- plotly::ggplotly(p, tooltip = "text") %>%
       plotly::style(hoverlabel = list(bgcolor = "white"),
                     hoveron = "fill") %>%
@@ -77,7 +118,7 @@ mod_boxplot_server <- function(input, output, session) {
       ))
   })
   
-  output$caption_box <- renderText("OA shares of German research institutions per sector. The color of the boxes groups sectors into universities with a typically high total journal publication output, research-oriented institutes with a medium journal publication output and practise oriented institutions with a comparatively low journal publication output. Gray points display the OA shares for individual institutions.")
+  output$caption_box <- renderText("OA shares of German research institutions per sector. The color of the boxes groups sectors into universities with a typically high total journal publication output, research-oriented institutes with a medium journal publication output and practise oriented institutions with a comparatively low journal publication output. Colored circles display the OA shares for individual institutions, larger filled points highlight specific institutions upon selection.")
 }
 
 ## To be copied in the UI

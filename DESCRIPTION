@@ -59,7 +59,8 @@ RoxygenNote: 7.1.1
 Suggests:
     testthat,
     subugoetheme,
-    shinycaas
+    shinycaas,
+    rsconnect
 Depends:
     R (>= 4.0)
 Roxygen: list(markdown = TRUE)

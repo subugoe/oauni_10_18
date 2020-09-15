@@ -12,7 +12,7 @@ mod_boxplot_ui <- function(id) {
   ns <- NS(id)
   fluidPage(fluidRow(
     box(title = "OA percentage across sectors",
-      plotly::plotlyOutput(ns("boxplot")), width = 8),
+        plotly::plotlyOutput(ns("boxplot")), width = 8),
     box(
       title = "Benchmark OA percentage",
       selectInput(
@@ -30,23 +30,22 @@ mod_boxplot_ui <- function(id) {
         value = c(2010, 2018),
         sep = ""
       ),
-      radioButtons(
+      selectInput(
         ns("oa_cat"),
         label = "Which articles should be included?",
-        choiceValues = c("All",
-                          levels(oa_shares_inst_sec_boxplot$oa_host)[1:2],
-                          levels(oa_shares_inst_sec_boxplot$oa_category)),
-        choiceNames = c("All OA articles",
-                        "All journal-based OA",
-                        "All repository-based OA",
-                        "Articles in fully OA journals",
-                        "Articles available through non-fully OA journals",
-                        "OA via institutional repositories",
-                        "OA via disciplinary repositories",
-                        "OA via other OpenDOAR registered journals",
-                        "OA via repositories not registered with OpenDOAR",
-                        "Closed articles"),
-        selected = "All"
+        choices = setNames(c("All",
+                             levels(oa_shares_inst_sec_boxplot$oa_host)[1:2],
+                             levels(oa_shares_inst_sec_boxplot$oa_category)),
+                           c("All OA articles",
+                             "All journal-based OA",
+                             "All repository-based OA",
+                             "Articles in fully OA journals",
+                             "Articles available through non-fully OA journals",
+                             "OA via institutional repositories",
+                             "OA via disciplinary repositories",
+                             "OA via other OpenDOAR registered journals",
+                             "OA via repositories not registered with OpenDOAR",
+                             "Closed articles"))
       ),
       width = 4
     ),
@@ -96,7 +95,7 @@ mod_boxplot_server <- function(input, output, session) {
           dplyr::mutate(prop = n_cat / articles)
       }
     }
-
+    
     
     if (is.null(input$inst)) {
       p <- boxplot_oa(boxplot_df)
@@ -106,7 +105,7 @@ mod_boxplot_server <- function(input, output, session) {
       NULL
     }
     
-
+    
     p <- plotly::ggplotly(p, tooltip = "text") %>%
       plotly::style(hoverlabel = list(bgcolor = "white"),
                     hoveron = "fill") %>%

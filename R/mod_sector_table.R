@@ -28,6 +28,18 @@ mod_sector_table_ui <- function(id){
                  reactableOutput(ns("s2gov"))),
         tabPanel("Fraunhofer Society", 
                  reactableOutput(ns("fraunhofer"))),
+        tabPanel("Description",
+                 imageOutput(ns("photo")),
+                 HTML("<p></p>",
+                      "<p>This classification scheme illustrates how OA categories were derived. The classification is defined in more detail in the preprint article which is available together with supplementary material at: 
+                                      <p>Hobert, Anne, Jahn, Najko, Mayr, Philipp, Schmidt, Birgit, & Taubert, Niels. (2020). Open Access Uptake in Germany 2010-18: Adoption in a diverse research landscape. <a href='http://doi.org/10.5281/zenodo.3892951'>http://doi.org/10.5281/zenodo.3892951</a>[Preprint]</p></p>",
+                      "<p>The classification uses open access information from:
+                      <ul>
+                          <li>the <a href='https://pub.uni-bielefeld.de/record/2934907'>ISSN-Gold-OA-3.0 list</a> provided and maintained by Bielefeld University,</li>
+                          <li>the open access discovery service <a href='https://unpaywall.org/'>Unpaywall</a> provided and maintained by Impactstory, and</li>
+                          <li>the registry for open access repositories <a href='https://v2.sherpa.ac.uk/opendoar/'>OpenDOAR</a>.</li>
+                      </ul> 
+                      </p>")),
         width = 12
   ))
   )
@@ -59,6 +71,14 @@ mod_sector_table_server <- function(input, output, session){
   output$fraunhofer <- renderReactable({
     s2_react_table(s2_fraunhofer)
   })
+  output$photo <- renderImage(
+    list(
+      src = system.file("oa_class_scheme.jpg", package = "oadash"),
+      contentType = "image/jpg",
+      width = 630,
+      height = 400
+    )
+  )
   
 }
     

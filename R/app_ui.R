@@ -22,7 +22,8 @@ app_ui <- function(request) {
           "OA percentage vs. productivity",
           tabName = "scatter"
         ),
-        menuItem("OA variations", tabName = "boxplot")
+        menuItem("OA variations", tabName = "boxplot"),
+        menuItem("Summary tables", tabName = "tables")
       ),
       collapsed = FALSE,
       width = 270),
@@ -59,6 +60,10 @@ app_ui <- function(request) {
         tabItem(
           tabName = "boxplot",
             mod_boxplot_ui("boxplot_ui_1")
+      ),
+      tabItem(
+        tabName = "tables",
+        mod_sector_table_ui("sector_table_ui_1")
       )))
     )
   )

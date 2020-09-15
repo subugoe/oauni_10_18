@@ -73,8 +73,8 @@ mod_sector_table_server <- function(input, output, session){
   })
   output$photo <- renderImage(
     list(
-      src = system.file("oa_class_scheme.jpg", package = "oadash"),
-      contentType = "image/jpg",
+      src = system.file("oa_class_scheme_bold.png", package = "oadash"),
+      contentType = "image/png",
       width = 630,
       height = 400
     )

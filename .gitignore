@@ -4,4 +4,4 @@
 .Ruserdata
 data-raw/pubs_cat.csv
 docs/
-.rstudio/
+rsconnect/

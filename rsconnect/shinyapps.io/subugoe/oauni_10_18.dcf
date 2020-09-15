@@ -1,7 +1,0 @@
-server: shinyapps.io
-hostUrl: https://api.shinyapps.io/v1
-appId: 2815181
-url: https://subugoe.shinyapps.io/oauni_10_18/
-asMultiple: FALSE
-asStatic: FALSE
-ignoredFiles: .github

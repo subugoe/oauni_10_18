@@ -69,10 +69,20 @@ jobs:
         uses: azure/login@v1.1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Deploy Shiny Application to shinyapps.io ref
+        env:
+          SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
+          SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
+          GITHUB_REF: ${{ github.ref }}
+        if: github.event_name != 'pull_request'
+        run: |
+          remotes::install_github(repo = "subugoe/hoad", ref = "master", force = TRUE, dependencies = TRUE)
+          rsconnect::setAccountInfo(name = 'subugoe', token = Sys.getenv('SHINYAPPS_TOKEN'), secret = Sys.getenv('SHINYAPPS_SECRET'))
+          app_name <- paste0("oadash-", gsub("/", "-", Sys.getenv('GITHUB_REF')))
+          rsconnect::deployApp(appName = app_name)
+        shell: Rscript {0}
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/master'
         uses: maxheld83/ghpages@github-token
         env:
           BUILD_DIR: docs
-      - name: Sleep to let GITHUB_TOKEN persist
-        run: Sys.sleep(240)

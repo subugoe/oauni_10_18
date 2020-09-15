@@ -11,6 +11,7 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # List the first level UI elements here
     dashboardPage(
+      skin = "black",
       dashboardHeader(title = "Open Access in Germany 2010-18",
                       titleWidth = 270),
       dashboardSidebar(sidebarMenu(

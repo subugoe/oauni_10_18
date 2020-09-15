@@ -16,3 +16,4 @@ Dockerfile
 ^\.github$
 .vscode
 oauni_10_18.code-workspace
+^app\.R$

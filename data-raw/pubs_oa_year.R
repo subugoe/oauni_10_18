@@ -66,6 +66,10 @@ pubs_oa_year <- pubs_cat %>%
   group_by(PUBYEAR, oa_category, n_total_year) %>%
   summarise(n_cat_year = n_distinct(PK_ITEMS)) %>%
   mutate(prop = n_cat_year / n_total_year) %>% 
+  mutate(oa_cat = fct_rev(ifelse(oa_category %in% "is_oa", "Open Access", "Closed"))) %>%
   ungroup()
+# factor
+pubs_oa_year_r <- pubs_oa_year %>%
+  mutate(oa_cat = factor(ifelse(oa_category %in% "is_oa", "Open Access", "Closed"), levels = c("Closed", "Open Access")))
 
 usethis::use_data(pubs_oa_year, overwrite = TRUE)

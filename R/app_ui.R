@@ -37,7 +37,8 @@ app_ui <- function(request) {
                   box(
                     title = "OA percentage vs. publication volume (2010-18)",
                     mod_scatter_plot_ui("scatter_plot_ui_1"),
-                    width = 8
+                    width = 8,
+                    footer = tags$small("OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. Solid gray lines are obtained by linear regression within the sector, shaded gray areas are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector.")
                   ),
                   box(
                     title = NULL,
@@ -48,13 +49,7 @@ app_ui <- function(request) {
                       selected = "Universities"
                     ),
                     mod_select_view_ui("select_view_ui_1"),
-                    width = 4
-                  ),
-                  box(
-                    title = NULL,
-                    mod_display_caption_ui("display_caption_ui_1"),
-                    width = 8
-                  )
+                    width = 4)
                 )),
         # Box Plot
         tabItem(

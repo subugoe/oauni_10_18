@@ -19,7 +19,8 @@ mod_areaplot_is_oa_ui <- function(id){
         collapsible = TRUE)),
     fluidRow(
     box(title = "OA uptake in Germany (2010-2018)",
-        plotly::plotlyOutput(ns("areaplot")), width = 8),
+        plotly::plotlyOutput(ns("areaplot")), width = 8,
+        footer = tags$small("Open access to journal articles from German research institutions according to Unpaywall. Blue area represents journal articles with at least one freely available full-text, grey area toll-access articles. Tooltip shows the exact numbers per category on hovering.")),
     box(title = NULL,
         radioButtons(
           ns("rel_numbers"),
@@ -28,11 +29,7 @@ mod_areaplot_is_oa_ui <- function(id){
           choiceNames = c("total number of articles, or", "relative proportions."),
           selected = FALSE
         ),
-        width = 4)),
-    fluidRow(
-    box(title = NULL,
-        textOutput(ns("caption_area")),
-        width = 12))
+        width = 4))
   )
 }
     
@@ -42,7 +39,6 @@ mod_areaplot_is_oa_ui <- function(id){
 mod_areaplot_is_oa_server <- function(input, output, session){
   ns <- session$ns
   
- 
   output$areaplot <- renderPlotly({
     req(input$rel_numbers)
 
@@ -56,14 +52,6 @@ mod_areaplot_is_oa_server <- function(input, output, session){
         x = 0.4,
         y = -0.4
       ))
-  })
-  output$caption_area <- renderText({
-    req(input$rel_numbers)
-    if(input$rel_numbers == FALSE){
-      caption_str <- "Open access to journal articles from German research institutions according to Unpaywall. Blue area represents number of journal articles with at least one freely available full-text, grey area represents number of toll-access articles. Tooltip shows the exact numbers per category on hovering."
-    } else {
-      caption_str <- "Open access to journal articles from German research institutions according to Unpaywall. Blue area represents proportion of journal articles with at least one freely available full-text, grey area represents proportion of toll-access articles. Tooltip shows the exact numbers per category on hovering."
-    }
   })
 }
     

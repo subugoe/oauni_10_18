@@ -4,6 +4,7 @@
 #'     DO NOT REMOVE.
 #' @import shiny
 #' @import shinydashboard
+#'
 #' @noRd
 app_ui <- function(request) {
   tagList(
@@ -46,7 +47,7 @@ app_ui <- function(request) {
                     selectInput(
                       "sector",
                       "Pick sector:",
-                      choices = unique(oa_shares_inst_sector$sector),
+                      choices = unique(oadash::oa_shares_inst_sector$sector),
                       selected = "Universities"
                     ),
                     mod_select_view_ui("select_view_ui_1"),
@@ -75,11 +76,11 @@ app_ui <- function(request) {
 #' @noRd
 golem_add_external_resources <- function() {
   add_resource_path('www', app_sys('app/www'))
-  
+
   tags$head(favicon(),
             bundle_resources(path = app_sys('app/www'),
                              app_title = 'oadash')
             # Add here other external resources
-            # for example, you can add shinyalert::useShinyalert() 
+            # for example, you can add shinyalert::useShinyalert()
             )
 }

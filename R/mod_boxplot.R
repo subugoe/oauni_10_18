@@ -19,7 +19,7 @@ mod_boxplot_ui <- function(id) {
       selectInput(
         ns("inst"),
         "Highlight institutions:",
-        choices = c("Select ..." = "", select_inst_sector),
+        choices = c("Select ..." = "", oadash::select_inst_sector),
         multiple = TRUE,
         selected = "Select ..."
       ),
@@ -35,8 +35,8 @@ mod_boxplot_ui <- function(id) {
         ns("oa_cat"),
         label = "Which articles should be included?",
         choices = setNames(c("All",
-                             levels(oa_shares_inst_sec_boxplot$oa_host)[1:2],
-                             levels(oa_shares_inst_sec_boxplot$oa_category)),
+                             levels(oadash::oa_shares_inst_sec_boxplot$oa_host)[1:2],
+                             levels(oadash::oa_shares_inst_sec_boxplot$oa_category)),
                            c("All OA articles",
                              "All journal-based OA",
                              "All repository-based OA",
@@ -61,13 +61,13 @@ mod_boxplot_ui <- function(id) {
 #' @noRd
 mod_boxplot_server <- function(input, output, session) {
   ns <- session$ns
-  
+
   output$boxplot <- renderPlotly({
     req(input$pubyear)
-    
+
     if (input$oa_cat == "All"){
-      boxplot_df <- oa_shares_inst_sec_boxplot %>% 
-        dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, oa_articles) %>% 
+      boxplot_df <- oadash::oa_shares_inst_sec_boxplot %>%
+        dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, oa_articles) %>%
         dplyr::filter(between(PUBYEAR, min(input$pubyear), max(input$pubyear))) %>%
         dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
         dplyr::summarise(oa_articles = sum(oa_articles),
@@ -75,26 +75,26 @@ mod_boxplot_server <- function(input, output, session) {
         dplyr::mutate(prop = oa_articles / articles)
     } else {
       if (input$oa_cat %in% c("journal", "repository")) {
-        boxplot_df <- oa_shares_inst_sec_boxplot %>% 
-          dplyr::filter(oa_host == input$oa_cat) %>% 
-          dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, n_host) %>% 
+        boxplot_df <- oadash::oa_shares_inst_sec_boxplot %>%
+          dplyr::filter(oa_host == input$oa_cat) %>%
+          dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, n_host) %>%
           dplyr::filter(between(PUBYEAR, min(input$pubyear), max(input$pubyear))) %>%
           dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
           dplyr::summarise(n_host = sum(n_host),
                            articles = sum(articles)) %>%
           dplyr::mutate(prop = n_host / articles)
       } else{
-        boxplot_df <- oa_shares_inst_sec_boxplot %>% 
-          dplyr::filter(oa_category == input$oa_cat) %>% 
-          dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, n_cat) %>% 
-          dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>% 
+        boxplot_df <- oadash::oa_shares_inst_sec_boxplot %>%
+          dplyr::filter(oa_category == input$oa_cat) %>%
+          dplyr::distinct(PUBYEAR, INST_NAME, sec_abbr, sector_cat, articles, n_cat) %>%
+          dplyr::group_by(INST_NAME, sec_abbr, sector_cat) %>%
           dplyr::summarise(n_cat = sum(n_cat),
-                           articles = sum(articles)) %>% 
+                           articles = sum(articles)) %>%
           dplyr::mutate(prop = n_cat / articles)
       }
     }
-    
-    
+
+
     if (is.null(input$inst)) {
       p <- boxplot_oa(boxplot_df)
     } else {
@@ -102,8 +102,8 @@ mod_boxplot_server <- function(input, output, session) {
                       insts = dplyr::filter(boxplot_df, INST_NAME %in% input$inst))
       NULL
     }
-    
-    
+
+
     p <- plotly::ggplotly(p, tooltip = "text") %>%
       plotly::style(hoverlabel = list(bgcolor = "white"),
                     hoveron = "fill") %>%

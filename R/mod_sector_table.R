@@ -13,7 +13,7 @@ mod_sector_table_ui <- function(id){
   ns <- NS(id)
   
   fluidPage(fluidRow(
-    tabBox(title = "OA summaries per sector",
+    tabBox(title = "OA summaries per sector (2010-18)",
         tabPanel("Overview sectors", 
                  reactableOutput(ns("s2all"))),
         tabPanel("Universities", 

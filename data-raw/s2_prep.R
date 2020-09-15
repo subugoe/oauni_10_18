@@ -55,7 +55,7 @@ reactable(s2,
                                } else {
                                  list(color = "#111", background = pct_color(value))
                                }}),
-    `Proportion of Journal OA` = colDef("OA Gold", format = colFormat(percent = TRUE,
+    `Proportion of Journal OA` = colDef("OA Journal", format = colFormat(percent = TRUE,
                                                                          digit = 0),
                                         style = function(value) {
                                           # Lighter color for <1%
@@ -65,7 +65,7 @@ reactable(s2,
                                             list(color = "#111", background = pct_color(value))
                                           }}
                                         ),
-    `Proportion of Repository OA` = colDef("OA Green", format = colFormat(percent = TRUE,
+    `Proportion of Repository OA` = colDef("OA Repository", format = colFormat(percent = TRUE,
                                                                              digit = 0),
                                            style = function(value) {
                                              # Lighter color for <1%

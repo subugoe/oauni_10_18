@@ -11,6 +11,7 @@
 #' @export
 
 areaplot_is_oa <- function(data = NULL, rel_numbers = FALSE) {
+  
   if (rel_numbers){
     pp <- ggplot(data, aes(x = PUBYEAR,
                            y = prop,
@@ -20,11 +21,11 @@ areaplot_is_oa <- function(data = NULL, rel_numbers = FALSE) {
                              "</b>\n Proportion in %:",
                              round(prop * 100, 2))
     )) +
-      geom_area(aes(fill = fct_rev(oa_category), group = fct_rev(oa_category)),  alpha = 0.8, colour = "white") +
+      geom_area(aes(fill = fct_rev(oa_cat),
+                    group = fct_rev(oa_cat)),  alpha = 0.8, colour = "white") +
       scale_fill_manual(
-        values = c("#cccccca0", "#56b4e9"),
-        name = NULL,
-        labels = c("Closed", "Open Access")
+        values = c("Closed" = "#cccccca0", "Open Access" = "#56b4e9"),
+        name = NULL
       ) +
       scale_y_continuous(
         labels = scales::percent_format(accuracy = 5L),
@@ -41,14 +42,13 @@ areaplot_is_oa <- function(data = NULL, rel_numbers = FALSE) {
                               PUBYEAR,
                               "</b>\n Number of articles:",
                               n_cat_year),
-                           fill = fct_rev(oa_category),
-                           group = fct_rev(oa_category)
+                           fill = fct_rev(oa_cat),
+                           group = fct_rev(oa_cat)
                            )) +
       geom_area(alpha = 0.8, colour = "white") +
       scale_fill_manual(
-        values = c("#cccccca0", "#56b4e9"),
-        name = NULL,
-        labels = c("Closed", "Open Access")
+        values = c("Closed" = "#cccccca0", "Open Access" = "#56b4e9"),
+        name = NULL
       ) +
       scale_y_continuous(
         labels = scales::number_format(big.mark = ","),
@@ -58,4 +58,5 @@ areaplot_is_oa <- function(data = NULL, rel_numbers = FALSE) {
       labs(x = "Publication year", y = "Total articles") +
       theme_minimal_hgrid()
   }
+  return(pp)
 }

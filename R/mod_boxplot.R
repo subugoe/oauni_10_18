@@ -12,7 +12,8 @@ mod_boxplot_ui <- function(id) {
   ns <- NS(id)
   fluidPage(fluidRow(
     box(title = "OA percentage across sectors",
-        plotly::plotlyOutput(ns("boxplot")), width = 8),
+        plotly::plotlyOutput(ns("boxplot")), width = 8,
+        footer = tags$small("OA shares of German research institutions per sector. The color of the boxes groups sectors into universities with a typically high total journal publication output, research-oriented institutes with a medium journal publication output and practise oriented institutions with a comparatively low journal publication output. Colored circles display the OA shares for individual institutions, larger filled points highlight specific institutions upon selection.")),
     box(
       title = "Benchmark OA percentage",
       selectInput(
@@ -48,10 +49,7 @@ mod_boxplot_ui <- function(id) {
                              "Closed articles"))
       ),
       width = 4
-    ),
-    box(title = NULL,
-        textOutput(ns("caption_box")),
-        width = 8)
+    )
   ))
 }
 
@@ -116,8 +114,6 @@ mod_boxplot_server <- function(input, output, session) {
         y = -0.4
       ))
   })
-  
-  output$caption_box <- renderText("OA shares of German research institutions per sector. The color of the boxes groups sectors into universities with a typically high total journal publication output, research-oriented institutes with a medium journal publication output and practise oriented institutions with a comparatively low journal publication output. Colored circles display the OA shares for individual institutions, larger filled points highlight specific institutions upon selection.")
 }
 
 ## To be copied in the UI

@@ -78,7 +78,7 @@ jobs:
         run: |
           rsconnect::setAccountInfo(name = 'subugoe', token = Sys.getenv('SHINYAPPS_TOKEN'), secret = Sys.getenv('SHINYAPPS_SECRET'))
           app_name <- paste0("oadash-", gsub("/", "-", Sys.getenv('GITHUB_REF')))
-          rsconnect::deployApp(appName = app_name, appFiles = app_files, metadata = list(asMultiple = FALSE,  asStatic = FALSE, ignoredFiles = ".github"))
+          rsconnect::deployApp(appName = app_name, metadata = list(asMultiple = FALSE,  asStatic = FALSE, ignoredFiles = ".github"))
         shell: Rscript {0}
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/master'

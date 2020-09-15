@@ -10,7 +10,6 @@ authors:
     href: https://www.sub.uni-goettingen.de/
   Federal Ministry of Education and Research:
     href: https://www.bmbf.de
-    html: <img src="reference/figures/bmbf.png" height="15">
 template:
   package: subugoetheme
   opengraph:

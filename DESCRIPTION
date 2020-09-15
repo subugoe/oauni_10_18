@@ -30,7 +30,7 @@ Authors@R:
       ),
       person(
         given = "Federal Ministry of Education and Research",
-        role = c("spn")
+        role = c("spn", "fnd")
       )
     )
 Description: Shiny app highlighting the prevalence of open access in Germany

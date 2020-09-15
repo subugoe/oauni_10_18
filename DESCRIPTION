@@ -63,8 +63,8 @@ Suggests:
 Depends:
     R (>= 4.0)
 Roxygen: list(markdown = TRUE)
-URL: https://subugoe.github.io/hoad, https://github.com/subugoe/hoad/
-BugReports: https://github.com/subugoe/hoad/issues
+URL: https://subugoe.github.io/oauni_10_18, https://github.com/subugoe/oauni_10_18
+BugReports: https://github.com/subugoe/oauni_10_18/issues
 Remotes:
     subugoe/subugoetheme@1.0.0,
     subugoe/shinycaas@31684600b286d5da5639a430a4b83a04de36bd34

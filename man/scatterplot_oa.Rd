@@ -4,10 +4,10 @@
 \alias{scatterplot_oa}
 \title{Create OA / Overall Scatterplot}
 \usage{
-scatterplot_oa(oa_shares_inst_sector, insts = NULL)
+scatterplot_oa(x, insts = NULL)
 }
 \arguments{
-\item{oa_shares_inst_sector}{dataset}
+\item{x}{dataset}
 
 \item{insts}{institutions that you want to highlight}
 }

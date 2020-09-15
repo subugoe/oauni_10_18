@@ -1,6 +1,6 @@
 #' Create OA / Overall Scatterplot
 #'
-#' @param oa_shares_inst_sector dataset 
+#' @param x dataset
 #' @param insts institutions that you want to highlight
 #'
 #' @import ggplot2
@@ -9,8 +9,8 @@
 #' @importFrom cowplot theme_minimal_grid
 #' @export
 #'
-scatterplot_oa <- function(oa_shares_inst_sector, insts = NULL) {
-  ggplot(oa_shares_inst_sector, aes(x = n_total, y = oa_share)) +
+scatterplot_oa <- function(x, insts = NULL) {
+  ggplot(x, aes(x = n_total, y = oa_share)) +
     geom_smooth(formula = y ~ x, color = "#999999a0", method = "lm") +
     geom_point(color = "grey80", alpha = .7, size = 2, aes(text = paste("<b>", INST_NAME, "</b>\n OA percentage:", round(oa_share * 100, 2), "%\n Publications:", n_total)))  +
     geom_point(data = insts, color = "#56b4e9", size = 3) +
